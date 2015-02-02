@@ -1,0 +1,1 @@
+# takashiyamaguchi.github.io

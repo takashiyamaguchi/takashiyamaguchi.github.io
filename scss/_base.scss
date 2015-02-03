@@ -1,0 +1,21 @@
+$test: #4affff;
+
+.test{
+	border : 1px solid $test;
+	// height : 1rem;
+	color  : black;
+}
+
+//-------------------
+// トップページ
+//-------------------
+
+.cb-top{
+	// height           : 80px;
+	// background-color : red;
+	// color            : white;
+
+	h1{
+		color        : black;
+	}
+}

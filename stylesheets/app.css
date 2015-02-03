@@ -9098,3 +9098,13 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 3, ../scss/_base.scss */
+.test {
+  border: 1px solid #4affff;
+  color: black;
+}
+
+/* line 18, ../scss/_base.scss */
+.cb-top h1 {
+  color: black;
+}

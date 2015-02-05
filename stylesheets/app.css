@@ -9108,3 +9108,23 @@ th.hide-for-touch {
 .cb-top h1 {
   color: black;
 }
+/* line 23, ../scss/_base.scss */
+.cb-top .container {
+  padding: 0.625rem;
+}
+/* line 27, ../scss/_base.scss */
+.cb-top .cb-view {
+  height: 18.75rem;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 27, ../scss/_base.scss */
+  .cb-top .cb-view {
+    height: 13.125rem;
+  }
+}
+
+/* line 3, ../scss/_parts.scss */
+.button-radius-icon {
+  width: 4.375rem;
+  height: 4.375rem;
+}

@@ -16,19 +16,20 @@ $test: #4affff;
 	// color            : white;
 
 	h1{
-		color        : black;
+		color : black;
 	}
 
 	//レイアウト
 	.container{
-		padding: rem-calc(10);
+		padding : rem-calc(10);
 	}
 
 	.cb-view{
-		height:rem-calc(300);
+		height  : rem-calc(300);
+		padding : 0;
 
 		@media #{$medium-up} {
-			height:rem-calc(210);
+			height : rem-calc(210);
 		}
 	}
 

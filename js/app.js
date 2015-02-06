@@ -1,3 +1,30 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
+
+$(function(){
+
+	var win = $( window );
+
+	var viewSize = function(){
+
+		var
+			viewImage = $( '.cb-view' ), 
+			viewWidth = viewImage.width()
+		;
+
+		console.log( viewWidth ); //確認用
+
+		//.cb-viewの幅を取得して高さに反映。正方形にする
+		viewImage.css( 'height', viewWidth );		
+	};
+
+
+
+	//初回アクセス時
+	viewSize();
+
+	//リサイズ時
+	win.on( 'resize', viewSize )
+
+});

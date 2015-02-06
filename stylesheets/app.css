@@ -9108,17 +9108,40 @@ th.hide-for-touch {
 .cb-top h1 {
   color: black;
 }
-/* line 23, ../scss/_base.scss */
+/* line 21, ../scss/_base.scss */
+.cb-top pre {
+  padding: 1.875rem;
+  color: #555555;
+  font: 14px/1.6 monaco,monospace;
+  overflow-x: auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid red;
+  background-color: #222222;
+}
+/* line 30, ../scss/_base.scss */
+.cb-top pre > code {
+  font: inherit;
+  background-color: #222222;
+  border-color: #222222;
+  color: #FAFAFA;
+}
+/* line 39, ../scss/_base.scss */
 .cb-top .container {
   padding: 0.625rem;
 }
-/* line 27, ../scss/_base.scss */
+/* line 42, ../scss/_base.scss */
+.cb-top .container .wrap {
+  margin-bottom: 10px;
+}
+/* line 47, ../scss/_base.scss */
 .cb-top .cb-view {
-  height: 18.75rem;
+  max-height: 18.75rem;
   padding: 0;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 27, ../scss/_base.scss */
+  /* line 47, ../scss/_base.scss */
   .cb-top .cb-view {
     height: 13.125rem;
   }
@@ -9126,6 +9149,10 @@ th.hide-for-touch {
 
 /* line 3, ../scss/_parts.scss */
 .button-radius-icon {
-  width: 4.375rem;
-  height: 4.375rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  background-color: #EFEFEF;
 }

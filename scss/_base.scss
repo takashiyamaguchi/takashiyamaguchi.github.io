@@ -18,14 +18,35 @@ $test: #4affff;
 	h1{
 		color : black;
 	}
+	pre{
+		padding:rem-calc(30);
+		color:$charcoal;
+		font: 14px/1.6 monaco,monospace;
+		overflow-x: auto;
+		@include border-radius;
+		border: 1px solid red;
+		background-color: $jet;
+
+		&>code{
+			font: inherit;
+			background-color: $jet;
+			border-color: $jet;
+			color: $ghost;
+		}
+	}
 
 	//レイアウト
 	.container{
 		padding : rem-calc(10);
+
+		.wrap{
+			margin-bottom: 10px;
+		}
 	}
 
 	.cb-view{
-		height  : rem-calc(300);
+		max-height : rem-calc(300);
+		// min-height : rem-calc(300);
 		padding : 0;
 
 		@media #{$medium-up} {

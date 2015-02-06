@@ -13,8 +13,6 @@ $(function(){
 			viewWidth = viewImage.width()
 		;
 
-		console.log( viewWidth ); //確認用
-
 		//.cb-viewの幅を取得して高さに反映。正方形にする
 		viewImage.css( 'height', viewWidth );		
 	};

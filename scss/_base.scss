@@ -18,6 +18,9 @@ $test: #4affff;
 	h1{
 		color : black;
 	}
+	h2{
+		font-size: rem-calc(14);
+	}
 	pre{
 		padding:rem-calc(30);
 		color:$charcoal;
@@ -43,15 +46,21 @@ $test: #4affff;
 			margin-bottom: 10px;
 		}
 	}
-
 	.cb-view{
-		max-height : rem-calc(300);
+		height:80%;
+	}
+	.cb-view-wrap{
+		padding: rem-calc(2);
+		// max-height : rem-calc(300);
 		// min-height : rem-calc(300);
-		padding : 0;
-
-		@media #{$medium-up} {
-			height : rem-calc(210);
+		// padding : 0;
+		h2{
+			position: absolute;
+			bottom: 0;
 		}
+		// @media #{$medium-up} {
+		// 	height : rem-calc(210);
+		// }
 	}
 
 	.cb-source{

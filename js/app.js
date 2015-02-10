@@ -9,7 +9,7 @@ $(function(){
 	var viewSize = function(){
 
 		var
-			viewImage = $( '.cb-view' ), 
+			viewImage = $( '.cb-view-wrap' ), 
 			viewWidth = viewImage.width()
 		;
 

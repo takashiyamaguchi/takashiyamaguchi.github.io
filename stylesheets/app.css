@@ -9141,16 +9141,11 @@ th.hide-for-touch {
 }
 /* line 55, ../scss/_base.scss */
 .cb-top .cb-view {
-  height: 80%;
+  height: 71%;
 }
 /* line 58, ../scss/_base.scss */
 .cb-top .cb-view-wrap {
   padding: 0.125rem;
-}
-/* line 63, ../scss/_base.scss */
-.cb-top .cb-view-wrap h2 {
-  position: absolute;
-  bottom: 0;
 }
 
 /* line 3, ../scss/_parts.scss */

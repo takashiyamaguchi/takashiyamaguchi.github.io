@@ -53,17 +53,17 @@ $test: #4affff;
 		}
 	}
 	.cb-view{
-		height:80%;
+		height:71%;
 	}
 	.cb-view-wrap{
 		padding: rem-calc(2);
 		// max-height : rem-calc(300);
 		// min-height : rem-calc(300);
 		// padding : 0;
-		h2{
-			position: absolute;
-			bottom: 0;
-		}
+		// h2{
+		// 	position: absolute;
+		// 	bottom: 0;
+		// }
 		// @media #{$medium-up} {
 		// 	height : rem-calc(210);
 		// }

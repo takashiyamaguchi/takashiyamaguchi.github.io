@@ -7,6 +7,13 @@ $test: #4affff;
 }
 
 //-------------------
+// 変数
+//-------------------
+
+$cb-head-color : red;
+$cb-view-bg    : orange;
+
+//-------------------
 // 共通
 //-------------------
 
@@ -21,8 +28,12 @@ $test: #4affff;
 	// background-color : red;
 	// color            : white;
 
+	nav{
+		background-color : $cb-head-color;
+	}
 	h1{
-		color : black;
+		color : white;
+		letter-spacing: rem-calc(4);
 	}
 	h2{
 		font-size: rem-calc(14);
@@ -53,6 +64,7 @@ $test: #4affff;
 		}
 	}
 	.cb-view{
+		background-color: $cb-view-bg;
 		height:71%;
 	}
 	.cb-view-wrap{

@@ -9104,15 +9104,20 @@ th.hide-for-touch {
   color: black;
 }
 
-/* line 24, ../scss/_base.scss */
-.cb-top h1 {
-  color: black;
+/* line 31, ../scss/_base.scss */
+.cb-top nav {
+  background-color: red;
 }
-/* line 27, ../scss/_base.scss */
+/* line 34, ../scss/_base.scss */
+.cb-top h1 {
+  color: white;
+  letter-spacing: 0.25rem;
+}
+/* line 38, ../scss/_base.scss */
 .cb-top h2 {
   font-size: 0.875rem;
 }
-/* line 30, ../scss/_base.scss */
+/* line 41, ../scss/_base.scss */
 .cb-top pre {
   padding: 1.875rem;
   color: #555555;
@@ -9124,26 +9129,27 @@ th.hide-for-touch {
   border: 1px solid red;
   background-color: #222222;
 }
-/* line 39, ../scss/_base.scss */
+/* line 50, ../scss/_base.scss */
 .cb-top pre > code {
   font: inherit;
   background-color: #222222;
   border-color: #222222;
   color: #FAFAFA;
 }
-/* line 48, ../scss/_base.scss */
+/* line 59, ../scss/_base.scss */
 .cb-top .container {
   padding: 0.625rem;
 }
-/* line 51, ../scss/_base.scss */
+/* line 62, ../scss/_base.scss */
 .cb-top .container .wrap {
   margin-bottom: 10px;
 }
-/* line 55, ../scss/_base.scss */
+/* line 66, ../scss/_base.scss */
 .cb-top .cb-view {
+  background-color: orange;
   height: 71%;
 }
-/* line 58, ../scss/_base.scss */
+/* line 70, ../scss/_base.scss */
 .cb-top .cb-view-wrap {
   padding: 0.125rem;
 }

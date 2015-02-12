@@ -1,0 +1,41 @@
+//-------------------
+// 変数
+//-------------------
+
+$test: #4affff;
+
+//-------------------
+// 共通
+//-------------------
+
+.test{
+	border : 1px solid $test;
+	color  : black;
+}
+
+.height{
+	height: 10rem;
+}
+
+//-------------------
+// トップページ
+//-------------------
+
+.coyo-top{
+
+	header{
+		h1{
+			display: inline-block;
+		}
+	}
+
+	nav{
+		li{
+			float: left;
+		}
+	}
+
+	.coyo-bar{
+
+	}
+}

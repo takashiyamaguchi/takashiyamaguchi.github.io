@@ -3,8 +3,9 @@
 
 @import "compass";
 
-@import "base";
-@import "parts";
+@import "base";  // サイトの基本部分
+@import "parts"; // icon,buttonのscss
+@import "coyomee";  //coyomeeコーポレートサイト
 
 // FontAwesome
 // @import "font-awesome-compass";

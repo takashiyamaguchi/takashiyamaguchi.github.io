@@ -1,15 +1,8 @@
-$test: #4affff;
-
-.test{
-	border : 1px solid $test;
-	// height : 1rem;
-	color  : black;
-}
-
 //-------------------
 // 変数
 //-------------------
 
+$test: #4affff;
 $cb-head-color : red;
 $cb-view-bg    : orange;
 
@@ -17,41 +10,41 @@ $cb-view-bg    : orange;
 // 共通
 //-------------------
 
-
+.test{
+	border : 1px solid $test;
+	color  : black;
+}
 
 //-------------------
 // トップページ
 //-------------------
 
 .cb-top{
-	// height           : 80px;
-	// background-color : red;
-	// color            : white;
 
 	nav{
 		background-color : $cb-head-color;
 	}
 	h1{
-		color : white;
-		letter-spacing: rem-calc(4);
+		color          : white;
+		letter-spacing : rem-calc(4);
 	}
 	h2{
-		font-size: rem-calc(14);
+		font-size : rem-calc(14);
 	}
 	pre{
-		padding:rem-calc(30);
-		color:$charcoal;
-		font: 14px/1.6 monaco,monospace;
-		overflow-x: auto;
+		padding          : rem-calc(30);
+		color            : $charcoal;
+		font             : 14px/1.6 monaco,monospace;
+		overflow-x       : auto;
 		@include border-radius;
-		border: 1px solid red;
-		background-color: $jet;
+		border           : 1px solid red;
+		background-color : $jet;
 
 		&>code{
-			font: inherit;
-			background-color: $jet;
-			border-color: $jet;
-			color: $ghost;
+			font             : inherit;
+			background-color : $jet;
+			border-color     : $jet;
+			color            : $ghost;
 		}
 	}
 
@@ -60,30 +53,19 @@ $cb-view-bg    : orange;
 		padding : rem-calc(10);
 
 		.wrap{
-			margin-bottom: 10px;
+			margin-bottom : 10px;
 		}
 	}
 	.cb-view{
-		background-color: $cb-view-bg;
-		height:71%;
+		background-color : $cb-view-bg;
+		height           : 71%;
 	}
 	.cb-view-wrap{
-		padding: rem-calc(2);
-		// max-height : rem-calc(300);
-		// min-height : rem-calc(300);
-		// padding : 0;
-		// h2{
-		// 	position: absolute;
-		// 	bottom: 0;
-		// }
-		// @media #{$medium-up} {
-		// 	height : rem-calc(210);
-		// }
+		padding : rem-calc(2);
 	}
 
 	.cb-source{
-		// height:rem-calc(300);
+		
 	}
-
 
 }

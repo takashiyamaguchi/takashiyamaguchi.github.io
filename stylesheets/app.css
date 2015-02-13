@@ -9182,4 +9182,5 @@ th.hide-for-touch {
 /* line 33, ../scss/_coyomee.scss */
 .coyo-top nav li {
   float: left;
+  margin-left: 20px;
 }

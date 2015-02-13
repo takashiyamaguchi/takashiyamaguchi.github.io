@@ -11,6 +11,17 @@
 </head>
 <body>
 
+<!-- ここからfacebookのlikeボックス -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- ここまでfacebookのlikeボックス -->
+
 	<div class="container-wrapper coyo-top">
 
 	<header id="header" class="test">
@@ -22,9 +33,16 @@
 		</div>
 
 		<nav class="row">
-			<h1>coyomee</h1> 
+			<h1>coyomee</h1>
 
-			<ul class="right no-bullet">
+			<!-- <div class="right row">
+				<div class="columns medium-2">service</div>
+				<div class="columns medium-2">service</div>
+				<div class="columns medium-2">service</div>
+				<div class="columns medium-2">service</div>
+			</div> -->
+
+			<ul class="right no-bullet show-for-medium-up">
 				<li><a href="#">service</a></li>
 				<li><a href="#">service</a></li>
 				<li><a href="#">service</a></li>
@@ -38,19 +56,58 @@
 
 	<section class="test">
 		<div class="test row">
-			news
+		<p>news</p>
+			<table>
+				<!-- <caption>news</caption> -->
+				<tbody>
+					<tr>
+						<td>2015-02-15</td>
+						<td>新着</td>
+						<td>ここにお知らせが表示されますよ</td>
+					</tr>
+					<tr>
+						<td>2015-02-15</td>
+						<td>新着</td>
+						<td>ここにお知らせが表示されますよ</td>
+					</tr>
+					<tr>
+						<td>2015-02-15</td>
+						<td>新着</td>
+						<td>ここにお知らせが表示されますよ</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</section>
 	<section class="test">
 		
 		<div class="row test">
 			
-			<section class="test columns height small-8">
-					
+			<section class="test columns small-8">
+				
+				<div class="test height">
+					注目記事
+				</div>
+
+				<div class="test height columns small-6">記事</div>
+				<div class="test height columns small-6">記事</div>
+				<div class="test height columns small-6">記事</div>
+				<div class="test height columns small-6">記事</div>
+				<div class="test height columns small-6 end">記事</div>
 			</section>
 
-			<section class="test columns height small-4">
-					
+			<section class="test columns small-4">
+				
+			<ul class="no-bullet">
+			      <li><!-- ここからfacebookのlikeボックス -->
+			        <div class="fb-like-box" data-href="https://www.facebook.com/coyomee" data-width="300" data-height="600" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+			      </li><!-- ここまでfacebookのlikeボックス -->
+			      <li><!-- ここからtwitterのTLボックス -->
+			        <a class="twitter-timeline" width="300" height="600"　href="https://twitter.com/coyomee_JP" data-widget-id="487050559560491008">@coyomee_JP からのツイート</a>
+			        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			      </li><!-- ここまでtwitterのTLボックス -->
+			    </ul>
+
 			</section>	
 
 		</div>

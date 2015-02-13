@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+.content{
+	margin: 0 auto;
+	overflow: hidden;
+	height: 420px;
+}
+
+/*----------------------------------------
+	flickNav
+----------------------------------------*/
+div#flick01 {
+	overflow: hidden;
+}
+div#flick02 {
+	overflow: hidden;
+}
+
+ul.flickNav {
+	margin: 10px 0;
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+ul.flickNav li {
+	float: left;
+	display: inline;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	position: relative;
+	left: -50%;
+}
+
+ul.flickNav li a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #eee;	
+}
+
+ul.flickNav li.selected a {
+	background-color: #FF3333;	
+}
+
+
+
+div.container {
+	height: 380px;
+	position: relative;
+	clear: both;
+	overflow: hidden;/*必須*/
+	z-index: 1;
+}
+div.itemBox {
+	position: relative;/*必須*/
+}
+div.container .item {
+	text-align: center;
+	background-color: #fff;
+	float: left;/*必須*/
+}
+
+.moving {
+	-webkit-transition: -webkit-transform .2s ease-out;/*必須*/
+	-moz-transition: -moz-transform .2s ease-out;/*必須*/
+	-o-transition: -o-transform .2s ease-out;/*必須*/
+	-ms-transition: -ms-transform .2s ease-out;/*必須*/
+}
+
+div#flick01 figure {
+	margin: 0 auto;
+	background-color: #fff;
+	width: 300px;
+	height: 380px;
+}
+
+div#flick02 figure {
+	margin: 0 auto;
+	background-color: #fff;
+	width: 300px;
+	height: 230px;
+}
+
+ul.next_prev{
+	position: relative;
+	top: -200px;
+	left:0px;
+	z-index: 2;
+}
+
+ul.next_prev li {
+	margin: 10px;
+	padding: 0.3em;
+	display: inline;
+	cursor: pointer;
+}
+
+ul.next_prev li.off {
+	display: none;
+}
+
+ul.next_prev li.prev {
+	float: left;
+}
+ul.next_prev li.next {
+	float: right;
+}

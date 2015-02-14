@@ -14,7 +14,7 @@ $test: #4affff;
 }
 
 .height{
-	height: 10rem;
+	height : 10rem;
 }
 
 //-------------------
@@ -25,18 +25,46 @@ $test: #4affff;
 
 	header{
 		h1{
-			display: inline-block;
+			display : inline-block;
 		}
 	}
 
 	nav{
 		li{
-			float: left;
-			margin-left:20px;
+			float       : left;
+			margin-left : 20px;
+			margin-top  : 20px;
 		}
 	}
 
 	.coyo-bar{
+
+	}
+
+	.coyo-news{
+
+	}
+
+	// メインコンテンツ
+	//**********************
+	.content-wrapper{
+
+		.p-highlight{
+		background-position : center center;
+		background-size     : cover;
+		height              : rem-calc(250);
+		margin-bottom       : rem-calc(15);
+		color               : white;
+		}
+
+		.p-contents{
+			padding       : 0;
+			margin-bottom : rem-calc(15);
+		}
+
+		.p-cover{
+			height: rem-calc(180);
+		}
 
 	}
 }

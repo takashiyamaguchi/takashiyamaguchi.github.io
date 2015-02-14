@@ -9107,17 +9107,18 @@ th.hide-for-touch {
 /* line 24, ../scss/_base.scss */
 .cb-top nav {
   background-color: red;
+  border-bottom: 1px solid #cc0000;
 }
-/* line 27, ../scss/_base.scss */
+/* line 28, ../scss/_base.scss */
 .cb-top h1 {
   color: white;
   letter-spacing: 0.25rem;
 }
-/* line 31, ../scss/_base.scss */
+/* line 32, ../scss/_base.scss */
 .cb-top h2 {
   font-size: 0.875rem;
 }
-/* line 34, ../scss/_base.scss */
+/* line 35, ../scss/_base.scss */
 .cb-top pre {
   padding: 1.875rem;
   color: #555555;
@@ -9129,27 +9130,27 @@ th.hide-for-touch {
   border: 1px solid red;
   background-color: #222222;
 }
-/* line 43, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 .cb-top pre > code {
   font: inherit;
   background-color: #222222;
   border-color: #222222;
   color: #FAFAFA;
 }
-/* line 52, ../scss/_base.scss */
+/* line 53, ../scss/_base.scss */
 .cb-top .container {
   padding: 0.625rem;
 }
-/* line 55, ../scss/_base.scss */
+/* line 56, ../scss/_base.scss */
 .cb-top .container .wrap {
   margin-bottom: 10px;
 }
-/* line 59, ../scss/_base.scss */
+/* line 60, ../scss/_base.scss */
 .cb-top .cb-view {
   background-color: orange;
   height: 71%;
 }
-/* line 63, ../scss/_base.scss */
+/* line 64, ../scss/_base.scss */
 .cb-top .cb-view-wrap {
   padding: 0.125rem;
 }
@@ -9183,4 +9184,22 @@ th.hide-for-touch {
 .coyo-top nav li {
   float: left;
   margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 52, ../scss/_coyomee.scss */
+.coyo-top .content-wrapper .p-highlight {
+  background-position: center center;
+  background-size: cover;
+  height: 15.625rem;
+  margin-bottom: 0.9375rem;
+  color: white;
+}
+/* line 60, ../scss/_coyomee.scss */
+.coyo-top .content-wrapper .p-contents {
+  padding: 0;
+  margin-bottom: 0.9375rem;
+}
+/* line 65, ../scss/_coyomee.scss */
+.coyo-top .content-wrapper .p-cover {
+  height: 11.25rem;
 }

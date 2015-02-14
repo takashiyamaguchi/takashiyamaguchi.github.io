@@ -7,127 +7,182 @@
 <link rel="stylesheet" href="/stylesheets/app.css">
 <link rel="stylesheet" href="/stylesheets/fonts/font-awesome.min.css">
 <link rel="stylesheet" href="/stylesheets/fonts/foundation-icons.css">
-<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="/bower_components/modernizr/modernizr.js"></script>
 </head>
+
 <body>
 
 <!-- ここからfacebookのlikeボックス -->
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 <!-- ここまでfacebookのlikeボックス -->
 
 	<div class="container-wrapper coyo-top">
 
-	<header id="header" class="test">
-		
-		<div class="coyo-bar test">
-			<i class="fa fa-facebook"></i>
-			<i class="fa fa-twitter"></i>
-			<i class="fa fa-google-plus"></i>
-		</div>
+		<!-- 
+		*~~~~~~~~~~~~~
+		* ヘッダー 
+		*~~~~~~~~~~~~~
+		-->
 
-		<nav class="row">
-			<h1>coyomee</h1>
-
-			<!-- <div class="right row">
-				<div class="columns medium-2">service</div>
-				<div class="columns medium-2">service</div>
-				<div class="columns medium-2">service</div>
-				<div class="columns medium-2">service</div>
-			</div> -->
-
-			<ul class="right no-bullet show-for-medium-up">
-				<li><a href="#">service</a></li>
-				<li><a href="#">service</a></li>
-				<li><a href="#">service</a></li>
-				<li><a href="#">service</a></li>
-				<li><a href="#">service</a></li>
-			</ul>
-
-		</nav>
-	
-	</header><!-- /header -->
-
-	<section class="test">
-		<div class="test row">
-		<p>news</p>
-			<table>
-				<!-- <caption>news</caption> -->
-				<tbody>
-					<tr>
-						<td>2015-02-15</td>
-						<td>新着</td>
-						<td>ここにお知らせが表示されますよ</td>
-					</tr>
-					<tr>
-						<td>2015-02-15</td>
-						<td>新着</td>
-						<td>ここにお知らせが表示されますよ</td>
-					</tr>
-					<tr>
-						<td>2015-02-15</td>
-						<td>新着</td>
-						<td>ここにお知らせが表示されますよ</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
-	<section class="test">
-		
-		<div class="row test">
+		<header id="header" class="test">
 			
-			<section class="test columns small-8">
-				
-				<div class="test height">
-					注目記事
-				</div>
+			<div class="coyo-bar test">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-google-plus"></i>
+				<i class="fa fa-rss"></i>
+			</div>
 
-				<div class="test height columns small-6">記事</div>
-				<div class="test height columns small-6">記事</div>
-				<div class="test height columns small-6">記事</div>
-				<div class="test height columns small-6">記事</div>
-				<div class="test height columns small-6 end">記事</div>
-			</section>
+			<nav class="row">
 
-			<section class="test columns small-4">
-				
-			<ul class="no-bullet">
-			      <li><!-- ここからfacebookのlikeボックス -->
-			        <div class="fb-like-box" data-href="https://www.facebook.com/coyomee" data-width="300" data-height="600" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
-			      </li><!-- ここまでfacebookのlikeボックス -->
-			      <li><!-- ここからtwitterのTLボックス -->
-			        <a class="twitter-timeline" width="300" height="600"　href="https://twitter.com/coyomee_JP" data-widget-id="487050559560491008">@coyomee_JP からのツイート</a>
-			        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			      </li><!-- ここまでtwitterのTLボックス -->
-			    </ul>
+				<h1>coyomee</h1>
 
-			</section>	
+				<!-- show-for-small-only -->
+				<i class="fa fa-navicon show-for-small-only right"></i>
 
-		</div>
+				<!-- show-for-medium-up -->
+				<ul class="right no-bullet show-for-medium-up">
+					<li><a href="#">service</a></li>
+					<li><a href="#">service</a></li>
+					<li><a href="#">service</a></li>
+					<li><a href="#">service</a></li>
+					<li><a href="#">service</a></li>
+				</ul>
+
+			</nav>
+		
+		</header>
 
 
-	</section>
+		<!-- 
+		*~~~~~~~~~~~~~
+		* お知らせ 
+		*~~~~~~~~~~~~~
+		-->
+		<section class="test">
+			<div class="coyo-news row">
+				<p>news</p>
+				<table>
+					<!-- <caption>news</caption> -->
+					<tbody>
+						<tr>
+							<td>2015-02-15</td>
+							<td>新着</td>
+							<td>ここにお知らせが表示されますよ</td>
+						</tr>
+						<tr>
+							<td>2015-02-15</td>
+							<td>新着</td>
+							<td>ここにお知らせが表示されますよ</td>
+						</tr>
+						<tr>
+							<td>2015-02-15</td>
+							<td>新着</td>
+							<td>ここにお知らせが表示されますよ</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
 
-	<footer class="test">
-		<div class="row">
-			<small>Copyright&copy;coyomee All rights reserved.</small>
-		</div>
-	</footer>
+		<!-- 
+		*~~~~~~~~~~~~~
+		* コンテンツ
+		*~~~~~~~~~~~~~
+		-->
+		<section class="content-wrapper test">
+			
+			<div class="row test">
+
+				<section class="test columns medium-8">
+					<h2>新着記事</h2>
+
+					<article class="p-highlight test" style="background-image:url(/img/sample.jpg);">
+
+						<p class="text-center">2015/02/14</p>
+						<h3 class="text-center">注目記事のタイトル</h3>
+					</article>
+
+					<article class="p-contents test columns medium-6">
+						<div class="p-cover test" style="background-image:url(/img/sample.jpg);">	
+						</div>
+						<h4>新着記事タイトル</h4>
+					</article>
+
+					<article class="p-contents test columns medium-6">
+						<div class="p-cover test" style="background-image:url(/img/sample.jpg);">	
+						</div>
+						<h4>新着記事タイトル</h4>
+					</article>
+
+					<article class="p-contents test columns medium-6 end">
+						<div class="p-cover test" style="background-image:url(/img/sample.jpg);">	
+						</div>
+						<h4>新着記事タイトル</h4>
+					</article>
+					
+					
+					
+				</section>
+
+
+				<section class="test columns medium-4">
+					
+					<ul class="no-bullet">
+
+						<li class="show-for-medium-up"><!-- ここからtwitterのTLボックス -->
+					        <a class="twitter-timeline" width="300" height="600"　href="https://twitter.com/coyomee_JP" data-widget-id="487050559560491008">@coyomee_JP からのツイート</a>
+					        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</li><!-- ここまでtwitterのTLボックス -->
+
+						<li class="show-for-small-only"><!-- ここからtwitterのTLボックス -->
+					        <a class="twitter-timeline" width="300" height="300"　href="https://twitter.com/coyomee_JP" data-widget-id="487050559560491008">@coyomee_JP からのツイート</a>
+					        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</li><!-- ここまでtwitterのTLボックス -->
+					      
+						<li class="show-for-medium-up"><!-- ここからfacebookのlikeボックス -->
+					        <div class="fb-like-box" data-href="https://www.facebook.com/coyomee" data-width="300" data-height="600" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+						</li><!-- ここまでfacebookのlikeボックス -->
+
+						<li class="show-for-small-only"><!-- ここからfacebookのlikeボックス -->
+					        <div class="fb-like-box" data-href="https://www.facebook.com/coyomee" data-width="300" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+						</li><!-- ここまでfacebookのlikeボックス -->
+					
+					</ul>
+
+				</section><!-- end .medium-4 .show-for-medium-up -->
+
+			</div>
+
+		</section>
+
+
+		<!-- 
+		*~~~~~~~~~~~~~
+		* フッター 
+		*~~~~~~~~~~~~~
+		-->
+		<footer class="test">
+			<div class="row">
+				<small>Copyright&copy;coyomee All rights reserved.</small>
+			</div>
+		</footer>
 
 
 	</div><!-- end .container-wrapper -->
 
-<script src="/bower_components/fastclick/lib/fastclick.js"></script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/foundation/js/foundation.min.js"></script>
-<script src="/js/app.js"></script>
+	<script src="/bower_components/fastclick/lib/fastclick.js"></script>
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/bower_components/foundation/js/foundation.min.js"></script>
+	<script src="/js/app.js"></script>
 
 </body>
 </html>

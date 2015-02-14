@@ -23,6 +23,7 @@ $cb-view-bg    : orange;
 
 	nav{
 		background-color : $cb-head-color;
+		border-bottom  : 1px solid darken(red, 10%);
 	}
 	h1{
 		color          : white;

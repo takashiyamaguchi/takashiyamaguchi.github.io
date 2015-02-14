@@ -2,7 +2,9 @@
 // 変数
 //-------------------
 
-$test: #4affff;
+$test        : #4affff;
+
+$coyo-bar-bg : #393939;
 
 //-------------------
 // 共通
@@ -24,24 +26,70 @@ $test: #4affff;
 .coyo-top{
 
 	header{
-		h1{
-			display : inline-block;
-		}
+		height: rem-calc(64);
 	}
 
 	nav{
-		li{
-			float       : left;
-			margin-left : 20px;
-			margin-top  : 20px;
+
+		ul{
+			border-right: 1px solid red;
+			li{
+				float : left;
+				border-left: 1px solid red;
+			}
+		}
+
+		a{
+			display: inline-block;
+			padding: rem-calc(20);
 		}
 	}
 
-	.coyo-bar{
+	h1{
+		display   : inline-block;
+		font-size : rem-calc(32);
+		margin    : rem-calc(6) 0 0 rem-calc(15);
+	}
 
+	h2{
+		display   : inline-block;
+		font-size: rem-calc(16);
+		margin    : rem-calc(6) 0 rem-calc(6) rem-calc(15);
+	}
+
+	.coyo-bar{
+		background-color : $coyo-bar-bg;
+		border-bottom    : 1px solid darken($coyo-bar-bg, 20%);
+		color            : white;
+		height           : rem-calc(32);
+
+		a{
+			color: white;
+
+			&:hover{
+				color: rgba(white, .5);
+			}
+		}
+
+		i{
+			display     : inline-block;
+			text-align  : center;
+			font-size   : rem-calc(14);
+			width       : rem-calc(24);
+			height      : rem-calc(16);
+			padding-top : rem-calc(8);
+		}
 	}
 
 	.coyo-news{
+
+		table{
+			margin-left: rem-calc(15);
+			td{
+				padding:0;
+				font-size: 12px;
+			}
+		}
 
 	}
 

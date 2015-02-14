@@ -9165,28 +9165,81 @@ th.hide-for-touch {
   background-color: #EFEFEF;
 }
 
-/* line 11, ../scss/_coyomee.scss */
+/* line 13, ../scss/_coyomee.scss */
 .test {
   border: 1px solid #4affff;
   color: black;
 }
 
-/* line 16, ../scss/_coyomee.scss */
+/* line 18, ../scss/_coyomee.scss */
 .height {
   height: 10rem;
 }
 
-/* line 27, ../scss/_coyomee.scss */
-.coyo-top header h1 {
-  display: inline-block;
+/* line 28, ../scss/_coyomee.scss */
+.coyo-top header {
+  height: 4rem;
 }
-/* line 33, ../scss/_coyomee.scss */
-.coyo-top nav li {
+/* line 34, ../scss/_coyomee.scss */
+.coyo-top nav ul {
+  border-right: 1px solid red;
+}
+/* line 36, ../scss/_coyomee.scss */
+.coyo-top nav ul li {
   float: left;
-  margin-left: 20px;
-  margin-top: 20px;
+  border-left: 1px solid red;
 }
-/* line 52, ../scss/_coyomee.scss */
+/* line 42, ../scss/_coyomee.scss */
+.coyo-top nav a {
+  display: inline-block;
+  padding: 1.25rem;
+}
+/* line 48, ../scss/_coyomee.scss */
+.coyo-top h1 {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0.375rem 0 0 0.9375rem;
+}
+/* line 54, ../scss/_coyomee.scss */
+.coyo-top h2 {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.375rem 0 0.375rem 0.9375rem;
+}
+/* line 60, ../scss/_coyomee.scss */
+.coyo-top .coyo-bar {
+  background-color: #393939;
+  border-bottom: 1px solid #060606;
+  color: white;
+  height: 2rem;
+}
+/* line 66, ../scss/_coyomee.scss */
+.coyo-top .coyo-bar a {
+  color: white;
+}
+/* line 69, ../scss/_coyomee.scss */
+.coyo-top .coyo-bar a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 74, ../scss/_coyomee.scss */
+.coyo-top .coyo-bar i {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.875rem;
+  width: 1.5rem;
+  height: 1rem;
+  padding-top: 0.5rem;
+}
+/* line 86, ../scss/_coyomee.scss */
+.coyo-top .coyo-news table {
+  margin-left: 0.9375rem;
+}
+/* line 88, ../scss/_coyomee.scss */
+.coyo-top .coyo-news table td {
+  padding: 0;
+  font-size: 12px;
+}
+/* line 100, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-highlight {
   background-position: center center;
   background-size: cover;
@@ -9194,12 +9247,12 @@ th.hide-for-touch {
   margin-bottom: 0.9375rem;
   color: white;
 }
-/* line 60, ../scss/_coyomee.scss */
+/* line 108, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-contents {
   padding: 0;
   margin-bottom: 0.9375rem;
 }
-/* line 65, ../scss/_coyomee.scss */
+/* line 113, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-cover {
   height: 11.25rem;
 }

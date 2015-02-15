@@ -9230,16 +9230,12 @@ th.hide-for-touch {
   height: 1rem;
   padding-top: 0.5rem;
 }
-/* line 86, ../scss/_coyomee.scss */
-.coyo-top .coyo-news table {
+/* line 85, ../scss/_coyomee.scss */
+.coyo-top .coyo-news ul {
   margin-left: 0.9375rem;
+  font-size: 0.75rem;
 }
-/* line 88, ../scss/_coyomee.scss */
-.coyo-top .coyo-news table td {
-  padding: 0;
-  font-size: 12px;
-}
-/* line 100, ../scss/_coyomee.scss */
+/* line 96, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-highlight {
   background-position: center center;
   background-size: cover;
@@ -9247,12 +9243,12 @@ th.hide-for-touch {
   margin-bottom: 0.9375rem;
   color: white;
 }
-/* line 108, ../scss/_coyomee.scss */
+/* line 104, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-contents {
   padding: 0;
   margin-bottom: 0.9375rem;
 }
-/* line 113, ../scss/_coyomee.scss */
+/* line 109, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-cover {
   height: 11.25rem;
 }

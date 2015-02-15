@@ -82,13 +82,9 @@ $coyo-bar-bg : #393939;
 	}
 
 	.coyo-news{
-
-		table{
+		ul{
 			margin-left: rem-calc(15);
-			td{
-				padding:0;
-				font-size: 12px;
-			}
+			font-size: rem-calc(12);
 		}
 
 	}

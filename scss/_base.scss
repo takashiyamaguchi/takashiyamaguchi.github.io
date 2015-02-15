@@ -28,6 +28,7 @@ $cb-view-bg    : orange;
 	h1{
 		color          : white;
 		letter-spacing : rem-calc(4);
+		display        : inline-block;
 	}
 	h2{
 		font-size : rem-calc(14);
@@ -49,24 +50,34 @@ $cb-view-bg    : orange;
 		}
 	}
 
+	//アイコン
+
+	.fi-social-github{
+		color: #333;
+		font-size: 38px;
+		width: 44px;
+		display: inline-block;
+		text-align: center;
+	}
+
 	//レイアウト
-	.container{
-		padding : rem-calc(10);
+	// .container{
+	// 	padding : rem-calc(10);
 
-		.wrap{
-			margin-bottom : 10px;
-		}
-	}
-	.cb-view{
-		background-color : $cb-view-bg;
-		height           : 71%;
-	}
-	.cb-view-wrap{
-		padding : rem-calc(2);
-	}
+	// 	.wrap{
+	// 		margin-bottom : 10px;
+	// 	}
+	// }
+	// .cb-view{
+	// 	background-color : $cb-view-bg;
+	// 	height           : 71%;
+	// }
+	// .cb-view-wrap{
+	// 	padding : rem-calc(2);
+	// }
 
-	.cb-source{
+	// .cb-source{
 		
-	}
+	// }
 
 }

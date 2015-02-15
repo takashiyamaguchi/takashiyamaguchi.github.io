@@ -9114,12 +9114,13 @@ th.hide-for-touch {
 .cb-top h1 {
   color: white;
   letter-spacing: 0.25rem;
+  display: inline-block;
 }
-/* line 32, ../scss/_base.scss */
+/* line 33, ../scss/_base.scss */
 .cb-top h2 {
   font-size: 0.875rem;
 }
-/* line 35, ../scss/_base.scss */
+/* line 36, ../scss/_base.scss */
 .cb-top pre {
   padding: 1.875rem;
   color: #555555;
@@ -9131,29 +9132,20 @@ th.hide-for-touch {
   border: 1px solid red;
   background-color: #222222;
 }
-/* line 44, ../scss/_base.scss */
+/* line 45, ../scss/_base.scss */
 .cb-top pre > code {
   font: inherit;
   background-color: #222222;
   border-color: #222222;
   color: #FAFAFA;
 }
-/* line 53, ../scss/_base.scss */
-.cb-top .container {
-  padding: 0.625rem;
-}
-/* line 56, ../scss/_base.scss */
-.cb-top .container .wrap {
-  margin-bottom: 10px;
-}
-/* line 60, ../scss/_base.scss */
-.cb-top .cb-view {
-  background-color: orange;
-  height: 71%;
-}
-/* line 64, ../scss/_base.scss */
-.cb-top .cb-view-wrap {
-  padding: 0.125rem;
+/* line 55, ../scss/_base.scss */
+.cb-top .fi-social-github {
+  color: #333;
+  font-size: 38px;
+  width: 44px;
+  display: inline-block;
+  text-align: center;
 }
 
 /* line 3, ../scss/_parts.scss */
@@ -9222,34 +9214,35 @@ th.hide-for-touch {
   border-bottom: 1px solid #060606;
   color: white;
   height: 2rem;
+  padding-left: 0.9375rem;
 }
-/* line 79, ../scss/_coyomee.scss */
+/* line 80, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar a {
   color: white;
 }
-/* line 82, ../scss/_coyomee.scss */
+/* line 83, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 87, ../scss/_coyomee.scss */
+/* line 88, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar i {
   display: inline-block;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   width: 1.5rem;
   height: 1rem;
-  padding-top: 0.5rem;
+  padding-top: 0.125rem;
 }
-/* line 100, ../scss/_coyomee.scss */
+/* line 101, ../scss/_coyomee.scss */
 .coyo-top .coyo-news a {
   color: #cc0044;
 }
-/* line 104, ../scss/_coyomee.scss */
+/* line 105, ../scss/_coyomee.scss */
 .coyo-top .coyo-news ul {
   margin-left: 0.9375rem;
   font-size: 0.75rem;
 }
-/* line 115, ../scss/_coyomee.scss */
+/* line 116, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-highlight {
   background-position: center center;
   background-size: cover;
@@ -9257,25 +9250,25 @@ th.hide-for-touch {
   margin-bottom: 0.9375rem;
   color: white;
 }
-/* line 123, ../scss/_coyomee.scss */
+/* line 124, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-contents {
   padding: 0;
   margin-bottom: 0.9375rem;
 }
-/* line 128, ../scss/_coyomee.scss */
+/* line 129, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-cover {
   height: 11.25rem;
 }
-/* line 139, ../scss/_coyomee.scss */
+/* line 140, ../scss/_coyomee.scss */
 .coyo-top footer ul {
   margin: 0;
 }
-/* line 142, ../scss/_coyomee.scss */
+/* line 143, ../scss/_coyomee.scss */
 .coyo-top footer ul li {
   float: left;
   font-size: rm-calc(12);
 }
-/* line 145, ../scss/_coyomee.scss */
+/* line 146, ../scss/_coyomee.scss */
 .coyo-top footer ul li a {
   color: #cc0044;
 }

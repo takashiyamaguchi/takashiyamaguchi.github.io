@@ -75,6 +75,7 @@ $coyo-color  : #cc0044;
 		border-bottom    : 1px solid darken($coyo-bar-bg, 20%);
 		color            : white;
 		height           : rem-calc(32);
+		padding-left     : rem-calc(15); 
 
 		a{
 			color : white;
@@ -87,10 +88,10 @@ $coyo-color  : #cc0044;
 		i{
 			display     : inline-block;
 			text-align  : center;
-			font-size   : rem-calc(14);
+			font-size   : rem-calc(20);
 			width       : rem-calc(24);
 			height      : rem-calc(16);
-			padding-top : rem-calc(8);
+			padding-top : rem-calc(2);
 		}
 	}
 	// お知らせ

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 348, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.0/";
@@ -9165,63 +9166,72 @@ th.hide-for-touch {
   background-color: #EFEFEF;
 }
 
-/* line 13, ../scss/_coyomee.scss */
+/* line 14, ../scss/_coyomee.scss */
 .test {
   border: 1px solid #4affff;
   color: black;
 }
 
-/* line 18, ../scss/_coyomee.scss */
+/* line 19, ../scss/_coyomee.scss */
 .height {
   height: 10rem;
 }
 
-/* line 28, ../scss/_coyomee.scss */
+/* line 32, ../scss/_coyomee.scss */
 .coyo-top header {
   height: 4rem;
 }
-/* line 34, ../scss/_coyomee.scss */
+/* line 38, ../scss/_coyomee.scss */
 .coyo-top nav ul {
   border-right: 1px solid red;
 }
-/* line 36, ../scss/_coyomee.scss */
+/* line 40, ../scss/_coyomee.scss */
 .coyo-top nav ul li {
   float: left;
   border-left: 1px solid red;
+  font-size: 0.875rem;
 }
-/* line 42, ../scss/_coyomee.scss */
-.coyo-top nav a {
+/* line 46, ../scss/_coyomee.scss */
+.coyo-top nav ul a {
   display: inline-block;
   padding: 1.25rem;
 }
-/* line 48, ../scss/_coyomee.scss */
+/* line 53, ../scss/_coyomee.scss */
 .coyo-top h1 {
   display: inline-block;
   font-size: 2rem;
   margin: 0.375rem 0 0 0.9375rem;
 }
-/* line 54, ../scss/_coyomee.scss */
+/* line 59, ../scss/_coyomee.scss */
 .coyo-top h2 {
   display: inline-block;
   font-size: 1rem;
   margin: 0.375rem 0 0.375rem 0.9375rem;
 }
-/* line 60, ../scss/_coyomee.scss */
+/* line 65, ../scss/_coyomee.scss */
+.coyo-top h3 {
+  display: inline-block;
+}
+/* line 69, ../scss/_coyomee.scss */
+.coyo-top h4 {
+  color: 　white;
+}
+/* line 73, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar {
   background-color: #393939;
   border-bottom: 1px solid #060606;
   color: white;
   height: 2rem;
 }
-/* line 66, ../scss/_coyomee.scss */
+/* line 79, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar a {
   color: white;
 }
-/* line 69, ../scss/_coyomee.scss */
+/* line 82, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 74, ../scss/_coyomee.scss */
+/* line 87, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar i {
   display: inline-block;
   text-align: center;
@@ -9230,12 +9240,16 @@ th.hide-for-touch {
   height: 1rem;
   padding-top: 0.5rem;
 }
-/* line 85, ../scss/_coyomee.scss */
+/* line 100, ../scss/_coyomee.scss */
+.coyo-top .coyo-news a {
+  color: #cc0044;
+}
+/* line 104, ../scss/_coyomee.scss */
 .coyo-top .coyo-news ul {
   margin-left: 0.9375rem;
   font-size: 0.75rem;
 }
-/* line 96, ../scss/_coyomee.scss */
+/* line 115, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-highlight {
   background-position: center center;
   background-size: cover;
@@ -9243,12 +9257,25 @@ th.hide-for-touch {
   margin-bottom: 0.9375rem;
   color: white;
 }
-/* line 104, ../scss/_coyomee.scss */
+/* line 123, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-contents {
   padding: 0;
   margin-bottom: 0.9375rem;
 }
-/* line 109, ../scss/_coyomee.scss */
+/* line 128, ../scss/_coyomee.scss */
 .coyo-top .content-wrapper .p-cover {
   height: 11.25rem;
+}
+/* line 139, ../scss/_coyomee.scss */
+.coyo-top footer ul {
+  margin: 0;
+}
+/* line 142, ../scss/_coyomee.scss */
+.coyo-top footer ul li {
+  float: left;
+  font-size: rm-calc(12);
+}
+/* line 145, ../scss/_coyomee.scss */
+.coyo-top footer ul li a {
+  color: #cc0044;
 }

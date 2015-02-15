@@ -4,10 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>coyomee Inc</title>
-<link rel="stylesheet" href="/stylesheets/app.css">
+
 <link rel="stylesheet" href="/stylesheets/fonts/font-awesome.min.css">
 <link rel="stylesheet" href="/stylesheets/fonts/foundation-icons.css">
+<link rel="stylesheet" href="/stylesheets/app.css">
+
 <script src="/bower_components/modernizr/modernizr.js"></script>
+
 </head>
 
 <body>
@@ -43,28 +46,27 @@
 			
 			<nav class="row">
 
-				<h1>coyomee</h1>
+				<a href="index.html" title=""><h1>coyomee&nbsp;Inc.</h1></a>
 
 				<!-- show-for-small-only -->
-				<a class="right" href="#">
-					<i class="fa fa-navicon show-for-small-only"></i>
+				<a class="right show-for-small-only" href="#">
+					<i class="fa fa-navicon"></i>
 				</a>
 
 			    
 				<!-- show-for-medium-up -->
 				<ul class="right no-bullet show-for-medium-up">
-					<li><a href="#">Service</a></li>
-					<li><a href="#">Press</a></li>
-					<li><a href="#">Recruit</a></li>
-					<li><a href="#">About&nbsp;us</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#">運営サービス</a></li>
+					<li><a href="#">プレス情報</a></li>
+					<li><a href="#">採用情報</a></li>
+					<li><a href="#">会社情報</a></li>
 				</ul>
 
 			</nav>
 		
 		</header>
 
-
+<span class="fa fa-ambulance"></span>
 		<!-- 
 		*~~~~~~~~~~~~~
 		* お知らせ 
@@ -73,6 +75,7 @@
 		<section class="test">
 			<div class="coyo-news row">
 				<h2>お知らせ</h2>
+				<a href="#" title="">一覧</a>
 
 				<ul class="no-bullet">
 					<li>
@@ -80,26 +83,17 @@
 						<span>新着</span>
 						<a href="#" title="">ここにお知らせが表示されますよ</a>
 					</li>
+					<li>
+						<em>2015-02-15</em>
+						<span>新着</span>
+						<a href="#" title="">ここにお知らせが表示されますよ</a>
+					</li>
+					<li>
+						<em>2015-02-15</em>
+						<span>新着</span>
+						<a href="#" title="">ここにお知らせが表示されますよ</a>
+					</li>
 				</ul>
-				<!-- <table>
-					<tbody>
-						<tr>
-							<td>2015-02-15</td>
-							<td>新着</td>
-							<td>ここにお知らせが表示されますよ</td>
-						</tr>
-						<tr>
-							<td>2015-02-15</td>
-							<td>新着</td>
-							<td>ここにお知らせが表示されますよ</td>
-						</tr>
-						<tr>
-							<td>2015-02-15</td>
-							<td>新着</td>
-							<td>ここにお知らせが表示されますよ</td>
-						</tr>
-					</tbody>
-				</table> -->
 			</div>
 		</section>
 
@@ -114,32 +108,23 @@
 
 				<section class="test columns medium-8">
 					<h3>新着記事</h3>
+					<a href="#" title="">一覧</a>
 
 					<article class="p-highlight test" style="background-image:url(/img/sample.jpg);">
 
-						<p class="text-center">2015/02/14</p>
-						<h4 class="text-center">注目記事のタイトル</h4>
+						<!-- <p class="text-center">2015/02/14</p> -->
+						<h4>注目記事のタイトル</h4>
+						<span class="label">カテゴリ</span>
+						<em>2015/02/15</em>
 					</article>
 
 					<article class="p-contents test columns medium-6">
 						<div class="p-cover test" style="background-image:url(/img/sample.jpg);">	
 						</div>
 						<h4>新着記事タイトル</h4>
-					</article>
-
-					<article class="p-contents test columns medium-6">
-						<div class="p-cover test" style="background-image:url(/img/sample.jpg);">	
-						</div>
-						<h4>新着記事タイトル</h4>
-					</article>
-
-					<article class="p-contents test columns medium-6 end">
-						<div class="p-cover test" style="background-image:url(/img/sample.jpg);">	
-						</div>
-						<h4>新着記事タイトル</h4>
-					</article>
-					
-					
+						<span class="label">カテゴリ</span>
+						<em>2015/02/15</em>
+					</article>					
 					
 				</section>
 
@@ -181,7 +166,12 @@
 		*~~~~~~~~~~~~~
 		-->
 		<footer class="test">
-			<div class="row">
+			<div class="row test">
+				<ul class="no-bullet clearfix">
+					<li><a href="#">採用情報</a></li>
+					<li><a href="#">サイトマップ</a></li>
+					<li><a href="#">お問い合わせ</a></li>
+				</ul>
 				<small>Copyright&copy;coyomee All rights reserved.</small>
 			</div>
 		</footer>
@@ -189,10 +179,10 @@
 
 	</div><!-- end .container-wrapper -->
 
-	<script src="/bower_components/fastclick/lib/fastclick.js"></script>
-	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="/bower_components/foundation/js/foundation.min.js"></script>
-	<script src="/js/app.js"></script>
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/foundation/js/foundation.min.js"></script>
+<script src="/js/app.js"></script>
 
 </body>
 </html>

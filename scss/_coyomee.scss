@@ -5,6 +5,7 @@
 $test        : #4affff;
 
 $coyo-bar-bg : #393939;
+$coyo-color  : #cc0044;
 
 //-------------------
 // 共通
@@ -25,23 +26,27 @@ $coyo-bar-bg : #393939;
 
 .coyo-top{
 
+	// ヘッダー
+	//**********************
+
 	header{
-		height: rem-calc(64);
+		height : rem-calc(64);
 	}
 
 	nav{
 
 		ul{
-			border-right: 1px solid red;
+			border-right : 1px solid red;
 			li{
-				float : left;
-				border-left: 1px solid red;
+				float       : left;
+				border-left : 1px solid red;
+				font-size   : rem-calc(14);
 			}
-		}
 
-		a{
-			display: inline-block;
-			padding: rem-calc(20);
+			a{
+				display : inline-block;
+				padding : rem-calc(20);
+			}
 		}
 	}
 
@@ -53,8 +58,16 @@ $coyo-bar-bg : #393939;
 
 	h2{
 		display   : inline-block;
-		font-size: rem-calc(16);
+		font-size : rem-calc(16);
 		margin    : rem-calc(6) 0 rem-calc(6) rem-calc(15);
+	}
+
+	h3{
+		display : inline-block;
+	}
+
+	h4{
+		color:　white;
 	}
 
 	.coyo-bar{
@@ -64,7 +77,7 @@ $coyo-bar-bg : #393939;
 		height           : rem-calc(32);
 
 		a{
-			color: white;
+			color : white;
 
 			&:hover{
 				color: rgba(white, .5);
@@ -80,11 +93,17 @@ $coyo-bar-bg : #393939;
 			padding-top : rem-calc(8);
 		}
 	}
+	// お知らせ
+	//**********************
 
 	.coyo-news{
+		a{
+			color: $coyo-color;
+		}
+
 		ul{
-			margin-left: rem-calc(15);
-			font-size: rem-calc(12);
+			margin-left : rem-calc(15);
+			font-size   : rem-calc(12);
 		}
 
 	}
@@ -107,8 +126,26 @@ $coyo-bar-bg : #393939;
 		}
 
 		.p-cover{
-			height: rem-calc(180);
+			height : rem-calc(180);
 		}
 
+	}
+
+	// フッター
+	//**********************
+
+	footer{
+
+		ul{
+			margin : 0;
+
+			li{
+				float     : left;
+				font-size : rm-calc(12);
+				a{
+					color     : $coyo-color;
+				}	
+			}
+		}
 	}
 }

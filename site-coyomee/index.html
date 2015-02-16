@@ -17,17 +17,17 @@
 
 <body>
 
-<!-- ここからfacebookのlikeボックス -->
-<div id="fb-root"></div>
-<script>
-	(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-<!-- ここまでfacebookのlikeボックス -->
+	<!-- ここからfacebookのlikeボックス -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- ここまでfacebookのlikeボックス -->
 
 	<div class="container-wrapper coyo-top">
 
@@ -114,7 +114,7 @@
 					<article class="p-highlight test" style="background-image:url(/img/sample.jpg);">
 
 						<!-- <p class="text-center">2015/02/14</p> -->
-						<h4>注目記事のタイトル</h4>
+						<h4>記事</h4>
 						<span class="label">カテゴリ</span>
 						<em>2015/02/15</em>
 					</article>
@@ -125,7 +125,33 @@
 						<h4>新着記事タイトル</h4>
 						<span class="label">カテゴリ</span>
 						<em>2015/02/15</em>
-					</article>					
+					</article>
+
+					<article class="p-contents test columns medium-6">
+						<div class="p-cover test" style="background-image:url(/img/sample.jpg);">	
+						</div>
+						<h4>新着記事タイトル</h4>
+						<span class="label">カテゴリ</span>
+						<em>2015/02/15</em>
+					</article>
+
+					<h3>作品</h3>
+					<a href="#" title="">一覧</a>
+
+					<h3>作家</h3>
+					<a href="#" title="">一覧</a>
+
+					<!-- <div class="pagination-centered">
+
+						<ul class="pagination">
+							<li class="arrow"><a href="#" title=""><i class="fi-arrow-left"></i></a></li>
+							<li><a href="#" title="">1</a></li>
+							<li><a href="#" title="">2</a></li>
+							<li><a href="#" title="">3</a></li>
+							<li class="arrow"><a href="#" title=""><i class="fi-arrow-right"></i></a></li>
+						</ul>
+
+					</div>	 -->		
 					
 				</section>
 
@@ -169,7 +195,7 @@
 		<footer class="test">
 			<div class="row test">
 				<ul class="no-bullet clearfix">
-					<li><a href="#">採用情報</a></li>
+					<li class="current"><a href="#">採用情報</a></li>
 					<li><a href="#">サイトマップ</a></li>
 					<li><a href="#">お問い合わせ</a></li>
 				</ul>

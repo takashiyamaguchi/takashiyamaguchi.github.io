@@ -9209,21 +9209,30 @@ th.hide-for-touch {
   color: 　white;
 }
 /* line 73, ../scss/_coyomee.scss */
+.coyo-top .head-wrap {
+  background-color: #efefef;
+}
+/* line 76, ../scss/_coyomee.scss */
+.coyo-top .head-wrap h3 {
+  font-size: 1.5rem;
+  color: #666;
+}
+/* line 83, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar {
   background-color: #393939;
   border-bottom: 1px solid #060606;
   color: white;
   height: 2rem;
 }
-/* line 80, ../scss/_coyomee.scss */
+/* line 90, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar a {
   color: white;
 }
-/* line 83, ../scss/_coyomee.scss */
+/* line 93, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 88, ../scss/_coyomee.scss */
+/* line 98, ../scss/_coyomee.scss */
 .coyo-top .coyo-bar i {
   display: inline-block;
   text-align: center;
@@ -9232,42 +9241,36 @@ th.hide-for-touch {
   height: 1rem;
   padding-top: 0.125rem;
 }
-/* line 101, ../scss/_coyomee.scss */
+/* line 111, ../scss/_coyomee.scss */
 .coyo-top .coyo-news a {
   color: #cc0044;
 }
-/* line 105, ../scss/_coyomee.scss */
+/* line 115, ../scss/_coyomee.scss */
 .coyo-top .coyo-news ul {
   margin-left: 0.9375rem;
   font-size: 0.75rem;
 }
-/* line 116, ../scss/_coyomee.scss */
-.coyo-top .content-wrapper .p-highlight {
-  background-position: center center;
-  background-size: cover;
-  height: 15.625rem;
-  margin-bottom: 0.9375rem;
-  color: white;
+/* line 127, ../scss/_coyomee.scss */
+.coyo-top .content-wrapper .contents-news article {
+  height: 200px;
+  margin-bottom: 1rem;
 }
-/* line 124, ../scss/_coyomee.scss */
-.coyo-top .content-wrapper .p-contents {
-  padding: 0;
-  margin-bottom: 0.9375rem;
+@media only screen and (min-width: 40.063em) {
+  /* line 131, ../scss/_coyomee.scss */
+  .coyo-top .content-wrapper .contents-news article.medium-6 {
+    width: 49%;
+  }
 }
-/* line 129, ../scss/_coyomee.scss */
-.coyo-top .content-wrapper .p-cover {
-  height: 11.25rem;
-}
-/* line 140, ../scss/_coyomee.scss */
+/* line 163, ../scss/_coyomee.scss */
 .coyo-top footer ul {
   margin: 0;
 }
-/* line 143, ../scss/_coyomee.scss */
+/* line 166, ../scss/_coyomee.scss */
 .coyo-top footer ul li {
   float: left;
   font-size: rm-calc(12);
 }
-/* line 146, ../scss/_coyomee.scss */
+/* line 169, ../scss/_coyomee.scss */
 .coyo-top footer ul li a {
   color: #cc0044;
 }

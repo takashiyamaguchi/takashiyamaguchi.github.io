@@ -26,7 +26,7 @@ $coyo-color  : #cc0044;
 
 .coyo-top{
 
-	// ヘッダー
+	// ヘッダーまわり
 	//**********************
 
 	header{
@@ -68,6 +68,16 @@ $coyo-color  : #cc0044;
 
 	h4{
 		color:　white;
+	}
+
+	.head-wrap{
+		background-color: #efefef;
+
+		h3{
+			font-size: rem-calc(24);
+			color: #666;
+		}
+
 	}
 
 	.coyo-bar{
@@ -113,22 +123,35 @@ $coyo-color  : #cc0044;
 	//**********************
 	.content-wrapper{
 
-		.p-highlight{
-		background-position : center center;
-		background-size     : cover;
-		height              : rem-calc(250);
-		margin-bottom       : rem-calc(15);
-		color               : white;
+		.contents-news{
+			article{
+				height: 200px;
+				margin-bottom: rem-calc(16);
+
+				&.medium-6{
+					@media #{$medium-up} {
+						width: 49%;
+					}
+				}
+			}
 		}
 
-		.p-contents{
-			padding       : 0;
-			margin-bottom : rem-calc(15);
-		}
+		// .highlight{
+		// 	background-position : center center;
+		// 	background-size     : cover;
+		// 	height              : rem-calc(250);
+		// 	margin-bottom       : rem-calc(15);
+		// 	color               : white;
+		// }
 
-		.p-cover{
-			height : rem-calc(180);
-		}
+		// .contents{
+		// 	padding       : 0;
+		// 	margin-bottom : rem-calc(15);
+		// }
+
+		// .cover{
+		// 	height : rem-calc(180);
+		// }
 
 	}
 

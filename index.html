@@ -1,148 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Craftbox</title>
-<link rel="stylesheet" href="/stylesheets/app.css">
-<link rel="stylesheet" href="/stylesheets/fonts/foundation-icons.css">
-<script src="bower_components/modernizr/modernizr.js"></script>
-</head>
-<body>
+---
+layout: default
+title: Home
+hero: index
+image: samurai.jpg
+---
 
-	<!-- github ribbon -->
-	<a href="https://github.com/takashiyamaguchi" target="_blank" class="show-for-medium-up">
-		<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
-	</a>
-
-	<div class="container-wrapper cb-top">
-
-		<nav>
-			<div class="row">
-				<h1>Craftbox</h1>
-				<a href="https://github.com/takashiyamaguchi" target="_blank" class="show-for-small-only right"><i class="fi-social-github"></i></a>
-			</div>
-		</nav>
-
-		<div class="row">
-		<a href="http://yamasan.hateblo.jp/" target="_blank"><span class="label alert round"><i class="fa fa-gavel fa-spin"></i>工事中です</span></a>	
-		</div>
-		
-		<section>
-			<div class="row">
-				<div data-magellan-expedition="fixed">
-					<dl class="sub-nav">
-						<dd data-magellan-arrival="button"><a href="#button">Button</a></dd>
-						<dd data-magellan-arrival="color"><a href="#color">Color</a></dd>
-						<dd data-magellan-arrival="icon"><a href="#icon">Icon</a></dd>
-						<dd data-magellan-arrival="site"><a href="#site">Site</a></dd>
-					</dl>
-				</div>
-			</div>
-		</section>
-
-		<section class="container row">
-
-			<a name="button"></a>
-			<h3>Button</h3>
-
-			<ul class="no-bullet">
-
-				<!-- button-radius-icon -->
-				<li class="cb-view-wrap">
-					<a href="parts/button-radius-icon.html" title="button-radius-icon">
-						.button-radius-icon
-					</a>
-				</li>
-
-			</ul>
-
-
-			<a name="color"></a>
-			<h3>Color</h3>
-
-			<ul class="no-bullet">
-				
-				<!-- brand color -->
-				<li class="cb-view-wrap">
-					<a href="parts/button-radius-icon.html" title="button-radius-icon">
-						.button-radius-icon
-					</a>
-				</li>
-
-			</ul>
-
-			<a name="icon"></a>
-			<h3>Icon</h3>
-
-			<ul class="no-bullet">
-				<!-- button-radius-icon -->
-				<li class="cb-view-wrap">
-					<a href="parts/button-radius-icon.html" title="button-radius-icon">
-						.button-radius-icon
-					</a>
-				</li>
-
-				<!-- button-radius-icon -->
-				<li class="cb-view-wrap">
-					<a href="parts/button-radius-icon.html" title="button-radius-icon">
-						.button-radius-icon
-					</a>
-				</li>
-
-				<!-- button-radius-icon -->
-				<li class="cb-view-wrap">
-					<a href="parts/button-radius-icon.html" title="button-radius-icon">
-						.button-radius-icon
-					</a>
-				</li>
-
-				<!-- button-radius-icon -->
-				<li class="cb-view-wrap">
-					<a href="parts/button-radius-icon.html" title="button-radius-icon">
-						.button-radius-icon
-					</a>
-				</li>
-
-			</ul>
-
-
-			<a name="site"></a>
-			<h3>Site</h3>
-
-			<ul class="no-bullet">
-				
-			<!-- coyomee servicepage -->
-				<!-- <li class="cb-view-wrap">
-					<a href="site-coyomee-service" title="coyomee">
-						coyomee-service 2012/04/04
-					</a>
-				</li> -->
-
-				<!-- coyomee Inc 2015/04/04 -->
-				<!-- <li class="cb-view-wrap">
-					<a href="site-coyomee" title="coyomee">
-						coyomee Inc 2015/04/04
-					</a>
-				</li> -->
-
-			</ul>
-
-		</section><!-- end .container -->
-
-
-
-
-		<footer class="row">
-			<small>Copyright&copy;Design&nbsp;TakashiYAMAGUCHI&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
-		</footer>
-
-	</div><!-- end .container-wrapper -->
-
-<script src="/bower_components/fastclick/lib/fastclick.js"></script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/foundation/js/foundation.min.js"></script>
-<script src="/js/app.js"></script>
-
-</body>
-</html>
+<div class="postList">
+  {% for post in paginator.posts %}
+    <div class="post">
+      <span class="postList--date">{{ post.date | date_to_long_string }}</span>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p class="postList--desc">{{ post.content | strip_html | truncatewords: 50 }}</p>
+    </div>
+  {% endfor %}
+</div>

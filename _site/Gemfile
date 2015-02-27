@@ -1,6 +1,0 @@
-source 'https://rubygems.org'
-gem 'jekyll'
-gem 'jekyll-compass'
-gem 'jekyll-assets'
-gem 'uglifier'
-gem 'jekyll-gh-pages'

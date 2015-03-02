@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "markdownのテスト"
+title:  "Markdown記法のテスト"
 date:   2015-02-27 13:22:32
 categories: jekyll update
 ---

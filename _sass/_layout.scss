@@ -1,13 +1,14 @@
 /**
  * Site header
  */
-$blue: blue; // #003894
-// $gray: #666;
-$white: #fdfdfd;
+$blue       : #0000ff;
+$yellow     : #fff000;
+$grid-color : #4affff;
+$white      : #fdfdfd;
 
 
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    // border-top: 5px solid $yellow;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
     background-color: $blue;
@@ -41,6 +42,7 @@ $white: #fdfdfd;
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        color: $white;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {

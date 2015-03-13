@@ -1,23 +1,25 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Craftbox</title>
+		<link rel="stylesheet" href="stylesheets/app.css" />
+		<script src="bower_components/modernizr/modernizr.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="" title=""></a></li>
+				</ul>
+			</nav>
+			
+		</header><!-- /header -->
 
-<div class="home">
-
-  <h1 class="page-heading">Code Archive</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+		<!-- JavaScript -->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/foundation/js/foundation.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,175 @@
+//-------------------
+// 変数
+//-------------------
+
+$test        : #4affff;
+
+$coyo-bar-bg : #393939;
+$coyo-color  : #cc0044;
+
+//-------------------
+// 共通
+//-------------------
+
+.test{
+	border : 1px solid $test;
+	color  : black;
+}
+
+.height{
+	height : 10rem;
+}
+
+//-------------------
+// トップページ
+//-------------------
+
+.coyo-top{
+
+	// ヘッダーまわり
+	//**********************
+
+	header{
+		height : rem-calc(64);
+	}
+
+	nav{
+
+		ul{
+			border-right : 1px solid red;
+			li{
+				float       : left;
+				border-left : 1px solid red;
+				font-size   : rem-calc(14);
+			}
+
+			a{
+				display : inline-block;
+				padding : rem-calc(20);
+			}
+		}
+	}
+
+	h1{
+		display   : inline-block;
+		font-size : rem-calc(32);
+		margin    : rem-calc(6) 0 0 rem-calc(15);
+	}
+
+	h2{
+		display   : inline-block;
+		font-size : rem-calc(16);
+		margin    : rem-calc(6) 0 rem-calc(6) rem-calc(15);
+	}
+
+	h3{
+		display : inline-block;
+	}
+
+	h4{
+		color:　white;
+	}
+
+	.head-wrap{
+		background-color: #efefef;
+
+		h3{
+			font-size: rem-calc(24);
+			color: #666;
+		}
+
+	}
+
+	.coyo-bar{
+		background-color : $coyo-bar-bg;
+		border-bottom    : 1px solid darken($coyo-bar-bg, 20%);
+		color            : white;
+		height           : rem-calc(32);
+		// padding-left     : rem-calc(15); 
+
+		a{
+			color : white;
+
+			&:hover{
+				color: rgba(white, .5);
+			}
+		}
+
+		i{
+			display     : inline-block;
+			text-align  : center;
+			font-size   : rem-calc(20);
+			width       : rem-calc(24);
+			height      : rem-calc(16);
+			padding-top : rem-calc(2);
+		}
+	}
+	// お知らせ
+	//**********************
+
+	.coyo-news{
+		a{
+			color: $coyo-color;
+		}
+
+		ul{
+			margin-left : rem-calc(15);
+			font-size   : rem-calc(12);
+		}
+
+	}
+
+	// メインコンテンツ
+	//**********************
+	.content-wrapper{
+
+		.contents-news{
+			article{
+				height: 200px;
+				margin-bottom: rem-calc(16);
+
+				&.medium-6{
+					@media #{$medium-up} {
+						width: 49%;
+					}
+				}
+			}
+		}
+
+		// .highlight{
+		// 	background-position : center center;
+		// 	background-size     : cover;
+		// 	height              : rem-calc(250);
+		// 	margin-bottom       : rem-calc(15);
+		// 	color               : white;
+		// }
+
+		// .contents{
+		// 	padding       : 0;
+		// 	margin-bottom : rem-calc(15);
+		// }
+
+		// .cover{
+		// 	height : rem-calc(180);
+		// }
+
+	}
+
+	// フッター
+	//**********************
+
+	footer{
+
+		ul{
+			margin : 0;
+
+			li{
+				float     : left;
+				font-size : rm-calc(12);
+				a{
+					color     : $coyo-color;
+				}	
+			}
+		}
+	}
+}

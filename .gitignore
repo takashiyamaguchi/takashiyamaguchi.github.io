@@ -1,2 +1,6 @@
-_site
+#ファイル
+.DS_Store
+
+
+#ディレクトリ
 .sass-cache

@@ -1,0 +1,83 @@
+//-------------------
+// 変数
+//-------------------
+
+$test: #4affff;
+$cb-head-color : red;
+$cb-view-bg    : orange;
+
+//-------------------
+// 共通
+//-------------------
+
+.test{
+	border : 1px solid $test;
+	color  : black;
+}
+
+//-------------------
+// トップページ
+//-------------------
+
+// .cb-top{
+
+// 	nav{
+// 		background-color : $cb-head-color;
+// 		border-bottom  : 1px solid darken(red, 10%);
+// 	}
+// 	h1{
+// 		color          : white;
+// 		letter-spacing : rem-calc(4);
+// 		display        : inline-block;
+// 	}
+// 	h2{
+// 		font-size : rem-calc(14);
+// 	}
+// 	pre{
+// 		padding          : rem-calc(30);
+// 		color            : $charcoal;
+// 		font             : 14px/1.6 monaco,monospace;
+// 		overflow-x       : auto;
+// 		@include border-radius;
+// 		border           : 1px solid red;
+// 		background-color : $jet;
+
+// 		&>code{
+// 			font             : inherit;
+// 			background-color : $jet;
+// 			border-color     : $jet;
+// 			color            : $ghost;
+// 		}
+// 	}
+
+	//アイコン
+
+	// .fi-social-github{
+	// 	color: #333;
+	// 	font-size: 38px;
+	// 	width: 44px;
+	// 	display: inline-block;
+	// 	text-align: center;
+	// }
+
+	//レイアウト
+	// .container{
+	// 	padding : rem-calc(10);
+
+	// 	.wrap{
+	// 		margin-bottom : 10px;
+	// 	}
+	// }
+	// .cb-view{
+	// 	background-color : $cb-view-bg;
+	// 	height           : 71%;
+	// }
+	// .cb-view-wrap{
+	// 	padding : rem-calc(2);
+	// }
+
+	// .cb-source{
+		
+	// }
+
+// }

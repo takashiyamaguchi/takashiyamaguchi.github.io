@@ -9098,8 +9098,57 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 13, ../scss/_base.scss */
+/* line 16, ../scss/_base.scss */
 .test {
   border: 1px solid #4affff;
   color: black;
+}
+
+/* line 21, ../scss/_base.scss */
+header {
+  background: blue;
+  color: white;
+}
+/* line 26, ../scss/_base.scss */
+header h1 {
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 2.0625rem 0;
+}
+
+/* line 34, ../scss/_base.scss */
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+}
+
+/* line 46, ../scss/_base.scss */
+.site-top li {
+  background-color: white;
+  padding: 0;
+  border-bottom: 1px dashed blue;
+  border-right: 1px dashed blue;
+}
+/* line 52, ../scss/_base.scss */
+.site-top li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  color: blue;
+}
+/* line 59, ../scss/_base.scss */
+.site-top li a:hover {
+  background-color: black;
+  color: white;
+}
+/* line 64, ../scss/_base.scss */
+.site-top li a:hover h2 {
+  color: white;
+}
+/* line 69, ../scss/_base.scss */
+.site-top li a em {
+  font-style: normal;
 }

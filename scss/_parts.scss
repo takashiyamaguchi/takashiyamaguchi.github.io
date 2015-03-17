@@ -1,8 +1,0 @@
-// .button-radius-icon
-
-.button-radius-icon{
-	width:rem-calc(100);
-	height:rem-calc(100);
-	@include border-radius(4px, 4px);
-	background-color: $silver;
-}

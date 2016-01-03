@@ -448,3 +448,9 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.profile {
+  display: inline-block; }
+
+.profileimg {
+  float: left; }

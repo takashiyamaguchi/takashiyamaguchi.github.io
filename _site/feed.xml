@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Takashi Yamaguchi</title>
+    <description>備忘録
+</description>
+    <link>http://takashiyamaguchi.github.io//</link>
+    <atom:link href="http://takashiyamaguchi.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 31 Dec 2015 16:08:51 +0900</pubDate>
+    <lastBuildDate>Thu, 31 Dec 2015 16:08:51 +0900</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>初めてのWordpress組み込み</title>
+        <description>
+</description>
+        <pubDate>Wed, 10 Jun 2015 00:00:00 +0900</pubDate>
+        <link>http://takashiyamaguchi.github.io//wordpress/2015/06/10/jekyll.html</link>
+        <guid isPermaLink="true">http://takashiyamaguchi.github.io//wordpress/2015/06/10/jekyll.html</guid>
+        
+        
+        <category>WordPress</category>
+        
+      </item>
+    
+  </channel>
+</rss>

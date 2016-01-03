@@ -1,0 +1,12 @@
+# Site settings
+title: Takashi Yamaguchi
+email:  tkshyamaguchi45@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  備忘録
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://takashiyamaguchi.github.io/" # the base hostname & protocol for your site
+twitter_username: merlion45
+github_username: takashiyamaguchi
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,112 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// ベースのユニット
+
+/*ベースフォントサイズ*/
+$base-font-size : 16px;
+
+/*１ユニットのサイズ*/
+$base-line-height : 24px;
+
+@include establish-baseline;
+
+
+/* 共通 */
+
+$theme-color : #25c9d2;
+
+/* テスト用 */
+
+.aka{ border : 1px solid red;}
+.ao{ border : 1px solid aqua;}
+
+
+
+html,body{
+	font : 16px/1.5 Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', Hiragino Kaku Gothic Pro, sans-serif;
+	width : 100%;
+	height : 100%;
+}
+
+.glovalWrapper{
+	width : 100%;
+	height: 100%;
+}
+
+.container{
+	width : 62.5rem;
+	margin : 0 auto;
+}
+
+h1{
+	$font-size:37px;
+	@include adjust-font-size-to($font-size,3);
+	@include leader(1,$font-size);
+	@include trailer(1,$font-size);
+}
+
+
+
+/* button */
+
+.btn01 {
+	font-size:20px;
+	text-align: center;
+	display: block;
+	width: 300px;
+	margin: auto;
+	padding: 15px 0px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	overflow: hidden;
+	position: relative;
+	border-radius:3px;
+	transition:box-shadow 0.3s;
+	-webkit-box-shadow: 0px 5px 8px rgba(0,0,0,0.2);
+ 
+  span{
+    display: block;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    position:absolute;
+    -webkit-animation: effect-animation 2s;
+  }
+ 
+  &:hover{
+    -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.6);
+  }
+}
+ 
+.btn01-black{
+  background: #000;
+  color: #fff;
+  span{
+    background: #fff;
+    left:50%;
+    top:50%;
+    }
+}
+
+@include keyframes(effect-animation){
+	from{
+		@include transform(scale(1));
+		opacity:0.4;
+	}to{
+		@include transform(scale(100));
+		opacity:0;
+	}
+};
+
+
+

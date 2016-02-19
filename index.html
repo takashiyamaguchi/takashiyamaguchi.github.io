@@ -1,23 +1,23 @@
----
-layout: default
----
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>takashi YAMAGUCHI sandbox</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <!-- <link rel="author" href="humans.txt"> -->
+    </head>
+    <body>
+    	<div class="glovalWrapper aka">
+    		<div class="container ao">
+    			<h1>sandbox</h1>
+				<ul>
+				<li><a href="button.html">button</a></li>
+				</ul>  
+    		</div>  		
+    	</div>
 
-<div class="home">
-
-	<h1 class="page-heading">記事</h1>
-
-	<ul class="post-list">
-		{% for post in site.posts %}
-			<li>
-				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-				<h2>
-					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				</h2>
-			</li>
-		{% endfor %}
-	</ul>
-
-	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+        <!-- <script src="js/main.js"></script> -->
+    </body>
+</html>

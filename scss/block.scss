@@ -1,0 +1,226 @@
+.red{
+	border : 1px solid red;
+	@include breakpoint(small only){
+		border : 1px solid aqua;
+	}
+}
+
+// 共通
+// **************************
+
+.headerLead{
+	font-size: rem-calc(16);
+	margin-bottom: rem-calc(24);
+}
+
+article{
+	.article__hd{
+		color : $light-gray;
+		padding-bottom: rem-calc(8);
+	}
+}
+
+// トップページ
+// **************************
+
+.topCategory{
+	font-size : rem-calc(28);
+}
+
+// 左から横に広がる線
+.leftUnderline{
+	position   : relative;
+	display    : inline-block;
+	transition : all .3s;
+
+	&::after{
+		content          : '';
+		position         : absolute;
+		bottom           : 0;
+		left             : 0;
+		width            : 0;
+		height           : rem-calc(2);
+		background-color : red;
+		transition       : all .3s;
+	}
+
+	&:hover{
+		&::after{
+			width : 100%;
+		}
+	}
+}
+
+//中央から横に広がる線
+// .topCategory{
+// 	position: relative;
+// 	display: inline-block;
+// 	padding: rem-calc(3);
+// 	text-decoration: none;
+
+// 	&::after{
+// 		content : '';
+// 		position: absolute;
+// 		bottom: 0;
+// 		left : 0;
+// 		width : 100%;
+// 		height : rem-calc(1);
+// 		transform : scaleX(0);
+// 		background-color: red;
+// 		transition : all .3s;
+// 	}
+
+// 	&:hover{
+// 		&::after{
+// 			transform : scaleX(1);
+// 		}
+// 	}
+// }
+
+// ボタン
+// **************************
+
+.flatBase{
+	background-color : $primary-color;
+	color            : $white;
+	font-weight      : 600;
+	font-size        : rem-calc(20);
+	line-height      : rem-calc(20);
+	padding          : rem-calc(10) rem-calc(14);
+	border-radius    : rem-calc(6);
+	transition       : all .3s;
+	display          : inline-block;
+
+	&:hover{
+		color            : darken($white, 10%);
+		background-color : darken($primary-color, 10%)
+	}
+}
+
+.flatShadow{
+	background-color : $primary-color;
+	display          : inline-block;
+	color            : $white;
+	font-weight      : 600;
+	text-shadow      : 1px 1px 0 rgba(darken($primary-color, 10%), .9);
+	font-size        : rem-calc(20);
+	line-height      : rem-calc(20);
+	padding          : rem-calc(10) rem-calc(14);
+	border-radius    : rem-calc(6);
+	transition       : all .3s;
+	box-shadow       : 0 rem-calc(4) 0 rgba(darken($primary-color, 10%), 1);
+	position         : relative;
+	top              : -4px;
+
+	&:hover{
+		color : $white;
+		text-shadow : none;
+		top : 0;
+		box-shadow : 0 0 0 rgba(darken($primary-color, 10%), 1);
+	}
+}
+
+.gradient{
+	background    : linear-gradient($primary-color, darken($primary-color, 10%));
+	border        : 1px solid darken($primary-color, 14%);
+	display       : inline-block;
+	color         : $white;
+	font-weight   : 600;
+	text-shadow   : 1px 1px 0 rgba(darken($primary-color, 14%), .9);
+	font-size     : rem-calc(20);
+	line-height   : rem-calc(20);
+	padding       : rem-calc(10) rem-calc(14);
+	border-radius : rem-calc(6);
+	transition    : all .3s;
+
+	&:hover{
+		color      : $white;
+		background : linear-gradient(darken($primary-color, 10%), $primary-color);
+	}
+}
+
+// .kirari{
+
+
+
+// }
+
+$color: #2194E0;
+
+@keyframes sheen {
+	0% {
+		transform: skewY(-45deg) translateX(0);
+	}
+	100% {
+		transform: skewY(-45deg) translateX(12.5em);
+	}
+}
+
+.kirariWrap {
+	display: block;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.kirari {
+	padding: rem-calc(10) rem-calc(14);
+	text-align: center;
+	text-decoration: none;
+	color: $color;
+	border: 2px solid $color;
+	font-size: 24px;
+	display: inline-block;
+	border-radius: 0.3em;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		background-color: rgba(255,255,255,0.5);
+		height: 100%;
+		width: 3em;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -4.5em;
+		transform: skewX(-45deg) translateX(0);
+		transition: none;
+	}
+
+	&:hover {
+		background-color: $color;
+		color: #fff;
+		border-bottom: 4px solid darken($color, 10%);
+
+		&:before {
+			transform: skewX(-45deg) translateX(13.5em);
+			transition: all 0.5s ease-in-out;
+		}
+	}
+}
+
+// メニュー
+// **************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

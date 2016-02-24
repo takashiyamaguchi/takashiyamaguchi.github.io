@@ -3943,3 +3943,154 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+
+.red {
+  border: 1px solid red; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .red {
+      border: 1px solid aqua; } }
+
+.headerLead {
+  font-size: 1rem;
+  margin-bottom: 1.5rem; }
+
+article .article__hd {
+  color: #e6e6e6;
+  padding-bottom: 0.5rem; }
+
+.topCategory {
+  font-size: 1.75rem; }
+
+.leftUnderline {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .leftUnderline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.125rem;
+    background-color: red;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  .leftUnderline:hover::after {
+    width: 100%; }
+
+.flatBase {
+  background-color: #2199e8;
+  color: #fefefe;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.375rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: inline-block; }
+  .flatBase:hover {
+    color: #e5e5e5;
+    background-color: #147dc2; }
+
+.flatShadow {
+  background-color: #2199e8;
+  display: inline-block;
+  color: #fefefe;
+  font-weight: 600;
+  text-shadow: 1px 1px 0 rgba(20, 125, 194, 0.9);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.375rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  box-shadow: 0 0.25rem 0 #147dc2;
+  position: relative;
+  top: -4px; }
+  .flatShadow:hover {
+    color: #fefefe;
+    text-shadow: none;
+    top: 0;
+    box-shadow: 0 0 0 #147dc2; }
+
+.gradient {
+  background: -webkit-linear-gradient(#2199e8, #147dc2);
+  background: linear-gradient(#2199e8, #147dc2);
+  border: 1px solid #1271af;
+  display: inline-block;
+  color: #fefefe;
+  font-weight: 600;
+  text-shadow: 1px 1px 0 rgba(18, 113, 175, 0.9);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.375rem;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .gradient:hover {
+    color: #fefefe;
+    background: -webkit-linear-gradient(#147dc2, #2199e8);
+    background: linear-gradient(#147dc2, #2199e8); }
+
+@-webkit-keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+            transform: skewY(-45deg) translateX(0); }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+            transform: skewY(-45deg) translateX(12.5em); } }
+
+@keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+            transform: skewY(-45deg) translateX(0); }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+            transform: skewY(-45deg) translateX(12.5em); } }
+
+.kirariWrap {
+  display: block;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.kirari {
+  padding: 0.625rem 0.875rem;
+  text-align: center;
+  text-decoration: none;
+  color: #2194E0;
+  border: 2px solid #2194E0;
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 0.3em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden; }
+  .kirari:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    -webkit-transform: skewX(-45deg) translateX(0);
+        -ms-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+    transition: none; }
+  .kirari:hover {
+    background-color: #2194E0;
+    color: #fff;
+    border-bottom: 4px solid #1977b5; }
+    .kirari:hover:before {
+      -webkit-transform: skewX(-45deg) translateX(13.5em);
+          -ms-transform: skewX(-45deg) translateX(13.5em);
+              transform: skewX(-45deg) translateX(13.5em);
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }

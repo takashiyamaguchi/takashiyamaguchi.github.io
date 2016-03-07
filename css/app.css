@@ -4235,7 +4235,7 @@ article .article__hd {
   top: 1.25rem;
   overflow: hidden;
   border: none;
-  background: url(../img/cross.png) no-repeat center center;
+  content: 'close';
   text-indent: 200%;
   color: transparent;
   outline: none;

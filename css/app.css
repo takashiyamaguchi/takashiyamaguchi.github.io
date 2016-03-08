@@ -3950,6 +3950,14 @@ table.hover tr:nth-of-type(even):hover {
     .red {
       border: 1px solid aqua; } }
 
+.headerLogo {
+  background: url("../img/sandbox-logo.png") no-repeat;
+  background-size: contain;
+  color: transparent;
+  font-size: 0;
+  text-shadow: none;
+  height: 3.75rem; }
+
 .headerLead {
   font-size: 1rem;
   margin-bottom: 1.5rem; }
@@ -4286,3 +4294,9 @@ article .article__hd {
     font-size: 34px; }
   .overlay ul li {
     min-height: 34px; } }
+
+.balloon.regist02 {
+  padding: 0.75rem;
+  opacity: .9;
+  border-radius: 0.1875rem;
+  box-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3); }

@@ -14,7 +14,6 @@ $(function(){
 	$('#regist02').balloon({
 		position: 'bottom',
 		minLifetime: 3000,
-		// classname:'balloon regist02',
 		contents: '<a href="#">無料会員登録</a>で参加作家の<br />過去作品を全て見れます！',
 		css: {
 			padding: '0.75rem',
@@ -23,3 +22,23 @@ $(function(){
 		}
 	});
 });
+
+// #glovalContainer
+
+var
+	win = $(window),
+	winHeight = win.height(),
+	winWidth = win.width(),
+	container = $('#glovalContainer')
+;
+
+console.log(win);
+console.log('高さは' + winHeight);
+console.log('幅は' + winWidth);
+
+$(function(){
+	container.css('height', winHeight);
+});
+
+
+

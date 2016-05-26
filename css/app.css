@@ -3950,13 +3950,8 @@ table.hover tr:nth-of-type(even):hover {
     .red {
       border: 1px solid aqua; } }
 
-.headerLogo {
-  background: url("../img/sandbox-logo.png") no-repeat;
-  background-size: contain;
-  color: transparent;
-  font-size: 0;
-  text-shadow: none;
-  height: 3.75rem; }
+.height {
+  height: 1.25rem; }
 
 .headerLead {
   font-size: 1rem;
@@ -4295,8 +4290,23 @@ article .article__hd {
   .overlay ul li {
     min-height: 34px; } }
 
-.balloon.regist02 {
-  padding: 0.75rem;
-  opacity: .9;
-  border-radius: 0.1875rem;
-  box-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3); }
+.globalWrapper-gradient .column, .globalWrapper-gradient .columns {
+  height: 7.5rem; }
+  .globalWrapper-gradient .column.cags, .globalWrapper-gradient .cags.columns {
+    background: -webkit-linear-gradient(right, #ff07b7, #e1ff00);
+    background: linear-gradient(to left, #ff07b7, #e1ff00); }
+
+#glovalContainer {
+  background-color: blue; }
+
+.globalWrapper-animation .wave {
+  width: 18.75rem;
+  height: 18.75rem;
+  position: absolute;
+  top: 0; }
+  .globalWrapper-animation .wave.one {
+    background-color: rgba(255, 0, 0, 0.3); }
+  .globalWrapper-animation .wave.two {
+    background-color: rgba(0, 255, 0, 0.3); }
+  .globalWrapper-animation .wave.three {
+    background-color: rgba(0, 0, 255, 0.3); }

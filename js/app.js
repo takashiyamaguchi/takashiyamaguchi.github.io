@@ -40,5 +40,23 @@ $(function(){
 	container.css('height', winHeight);
 });
 
+// ランディング
+
+var
+	works = $('#worksContent'),
+	worksWidth = works.width()
+	// worksHeight = works.height()
+;
+
+console.log('作品幅は' + worksWidth);
+// console.log(worksHeight);
+
+$(function(){
+	works.css('height', '20px');
+});
+
+// $(function(){
+// 	// $('.works__wrap').css('height', 12rem);
+// });
 
 

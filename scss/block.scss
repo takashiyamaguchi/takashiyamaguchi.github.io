@@ -476,8 +476,24 @@ $color: #2194E0;
 // ランディング
 // **************************
 
+html,body{
+	border : 1px solid blue;
+}
+
 #glovalContainer{
-	background-color: blue;
+	// background-color: blue;
+	background-color: #fefefe;
+
+	.works__wrap{
+		background-size: cover;
+		background-position: center center;
+		// height : rem-calc(300);
+	}
+
+
+	#bgGrid{
+		background-color: #efefef;
+	}
 }
 
 // アニメーション

@@ -4296,8 +4296,16 @@ article .article__hd {
     background: -webkit-linear-gradient(right, #ff07b7, #e1ff00);
     background: linear-gradient(to left, #ff07b7, #e1ff00); }
 
+html, body {
+  border: 1px solid blue; }
+
 #glovalContainer {
-  background-color: blue; }
+  background-color: #fefefe; }
+  #glovalContainer .works__wrap {
+    background-size: cover;
+    background-position: center center; }
+  #glovalContainer #bgGrid {
+    background-color: #efefef; }
 
 .globalWrapper-animation .wave {
   width: 18.75rem;

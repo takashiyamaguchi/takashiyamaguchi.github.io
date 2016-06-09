@@ -5,7 +5,7 @@ $(document).foundation();
 
 var hoge = function(){
 	var 
-		illust = $('#authorPiece'),
+		illust = $('.author'),
 		illustHeight = illust.height(),
 		illustWidth = illust.width(),
 		zurashiFirst = illustWidth / 4 * 3,

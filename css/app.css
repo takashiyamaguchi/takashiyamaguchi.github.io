@@ -3946,6 +3946,9 @@ table.hover tr:nth-of-type(even):hover {
 
 .red {
   border: 1px solid red; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .red {
+      border: 1px solid green; } }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     .red {
       border: 1px solid aqua; } }
@@ -3972,7 +3975,10 @@ article .article__hd {
   background-position: center center; }
 
 .topCategory {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  color: #333333; }
+  .topCategory:hover {
+    color: blue; }
 
 .leftUnderline {
   position: relative;
@@ -3986,7 +3992,7 @@ article .article__hd {
     left: 0;
     width: 0;
     height: 0.125rem;
-    background-color: red;
+    background-color: yellow;
     -webkit-transition: all .3s;
     transition: all .3s; }
   .leftUnderline:hover::after {
@@ -4296,16 +4302,56 @@ article .article__hd {
     background: -webkit-linear-gradient(right, #ff07b7, #e1ff00);
     background: linear-gradient(to left, #ff07b7, #e1ff00); }
 
-html, body {
-  border: 1px solid blue; }
+.test {
+  position: absolute;
+  left: 50%;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
 
-#glovalContainer {
-  background-color: #fefefe; }
-  #glovalContainer .works__wrap {
-    background-size: cover;
-    background-position: center center; }
-  #glovalContainer #bgGrid {
-    background-color: #efefef; }
+.testes:hover .test {
+  position: absolute;
+  left: 30%; }
+
+.globalWrapper-landing .landingHeader {
+  padding: 4rem 0 2rem; }
+  .globalWrapper-landing .landingHeader .title {
+    font-size: 3rem;
+    margin: 0 0 0 0;
+    line-height: 1.6; }
+  .globalWrapper-landing .landingHeader .lead {
+    font-size: 0.875rem;
+    margin: 0 0 0 0;
+    line-height: 1.6; }
+
+.globalWrapper-landing img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .globalWrapper-landing img:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%); }
+  .globalWrapper-landing img.lazy {
+    width: 18.75rem; }
+
+.globalWrapper-landing .author {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding: 0; }
+  .globalWrapper-landing .author .column, .globalWrapper-landing .author .columns {
+    padding: 0; }
+
+.globalWrapper-landing .author__inner {
+  display: inline-block; }
+  .globalWrapper-landing .author__inner .author__text {
+    position: relative;
+    top: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  .globalWrapper-landing .author__inner:hover .author__text {
+    position: relative;
+    top: -40px; }
 
 .globalWrapper-animation .wave {
   width: 18.75rem;
@@ -4318,3 +4364,9 @@ html, body {
     background-color: rgba(0, 255, 0, 0.3); }
   .globalWrapper-animation .wave.three {
     background-color: rgba(0, 0, 255, 0.3); }
+
+.globalWrapper-article .font__meiryo {
+  font-family: 'メイリオ', 'Meiryo'; }
+
+.globalWrapper-article .font__meiryo {
+  font-family: '游ゴシック', 'Yu Gothic'; }

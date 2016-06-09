@@ -1,5 +1,10 @@
 .red{
 	border : 1px solid red;
+
+	@include breakpoint(medium only){
+		border : 1px solid green;
+	}
+
 	@include breakpoint(small only){
 		border : 1px solid aqua;
 	}
@@ -59,6 +64,11 @@ article{
 
 .topCategory{
 	font-size : rem-calc(28);
+	color     : #333333;
+
+	&:hover{
+		color : blue;
+	}
 }
 
 // 左から横に広がる線
@@ -74,7 +84,7 @@ article{
 		left             : 0;
 		width            : 0;
 		height           : rem-calc(2);
-		background-color : red;
+		background-color : rgb(255, 255, 0);
 		transition       : all .3s;
 	}
 
@@ -476,25 +486,81 @@ $color: #2194E0;
 // ランディング
 // **************************
 
-html,body{
-	border : 1px solid blue;
+
+.test{
+	position: absolute;
+	left: 50%;
+	transition : all .3s;
 }
 
-#glovalContainer{
-	// background-color: blue;
-	background-color: #fefefe;
 
-	.works__wrap{
-		background-size: cover;
-		background-position: center center;
-		// height : rem-calc(300);
-	}
+.testes:hover{
 
-
-	#bgGrid{
-		background-color: #efefef;
+	.test{
+		position: absolute;
+		left: 30%;
 	}
 }
+
+.globalWrapper-landing{
+
+	.landingHeader{
+		padding : rem-calc(64) 0 rem-calc(32);
+
+		.title{
+			font-size : rem-calc(48);
+			margin : 0 0 0 0;
+			line-height: 1.6;
+		}
+		.lead{
+			font-size : rem-calc(14);
+			margin : 0 0 0 0;
+			line-height: 1.6;
+		}
+	}
+
+	img{
+		filter : grayscale(100%);
+		transition : all .3s;
+
+		&:hover{
+			filter : grayscale(0%);
+		}
+
+		&.lazy{
+			width:rem-calc(300);
+		}
+	}
+
+	.author{
+		display  : inline-block;
+		overflow : hidden;
+		position : relative;
+		padding  : 0;
+
+		.column{
+			padding : 0;
+		}
+	}
+
+	.author__inner{
+		display: inline-block;
+
+		.author__text{
+			position: relative;
+			top : 0;
+			transition : all .3s;
+		}
+
+		&:hover{
+			.author__text{
+				position: relative;
+				top : -40px;
+			}
+		}
+	}
+}
+
 
 // アニメーション
 // **************************
@@ -518,6 +584,24 @@ html,body{
 	}
 }
 
+// リスト
+// **************************
+.globalWrapper-article{
+
+	.font{
+		@at-root{
+			#{&}__meiryo{
+				font-family: 'メイリオ', 'Meiryo';
+			}
+		}
+
+		@at-root{
+			#{&}__meiryo{
+				font-family: '游ゴシック', 'Yu Gothic';
+			}
+		}
+	}
+}
 
 
 

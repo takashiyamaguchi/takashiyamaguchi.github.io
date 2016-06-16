@@ -3948,10 +3948,37 @@ table.hover tr:nth-of-type(even):hover {
   border: 1px solid red; }
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .red {
-      border: 1px solid green; } }
+      border: 1px solid #cc0000; } }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     .red {
-      border: 1px solid aqua; } }
+      border: 1px solid #990000; } }
+
+.blue {
+  border: 1px solid blue; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .blue {
+      border: 1px solid #0000cc; } }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .blue {
+      border: 1px solid #000099; } }
+
+.yellow {
+  border: 1px solid yellow; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .yellow {
+      border: 1px solid #cccc00; } }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .yellow {
+      border: 1px solid #999900; } }
+
+.green {
+  border: 1px solid green; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .green {
+      border: 1px solid #004d00; } }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .green {
+      border: 1px solid #001a00; } }
 
 .height {
   height: 1.25rem; }
@@ -4343,70 +4370,70 @@ article .article__hd {
             transform: translate3d(0, -4px, 0); } }
 
 .globalWrapper-landing #headerLogo {
-  width: 25rem; }
+  height: 5.625rem; }
   .globalWrapper-landing #headerLogo .logo-i {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-l1 {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-l2 {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-u {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-s {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-t1 {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-r1 {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-a {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-t2 {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-o {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
   .globalWrapper-landing #headerLogo .logo-r2 {
-    -webkit-animation: bounce 3s;
-            animation: bounce 3s;
+    -webkit-animation: bounce 2s;
+            animation: bounce 2s;
     -webkit-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
             transform-origin: center bottom; }
@@ -4420,13 +4447,13 @@ article .article__hd {
     line-height: 1.6; }
 
 .globalWrapper-landing img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) brightness(30%);
+          filter: grayscale(100%) brightness(30%);
   -webkit-transition: all .3s;
   transition: all .3s; }
   .globalWrapper-landing img:hover {
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%); }
+    -webkit-filter: grayscale(0%) brightness(100%);
+            filter: grayscale(0%) brightness(100%); }
   .globalWrapper-landing img.lazy {
     width: 18.75rem; }
 
@@ -4442,20 +4469,19 @@ article .article__hd {
   display: inline-block; }
   .globalWrapper-landing .author__inner .author__text {
     position: relative;
-    top: 0;
-    -webkit-transition: all .3s;
-    transition: all .3s; }
-  .globalWrapper-landing .author__inner .en {
-    font-size: 1rem;
-    font-weight: bold; }
-  .globalWrapper-landing .author__inner .ja {
+    font-weight: bold;
     font-size: 0.875rem;
-    font-weight: bold; }
+    top: 0;
+    text-align: right;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 3rem 0.75rem 0.5rem; }
   .globalWrapper-landing .author__inner:hover .author__text {
     position: relative;
-    top: -83px;
+    top: -78px;
     color: white;
-    background-color: red;
+    background: -webkit-linear-gradient(104deg, rgba(0, 0, 0, 0.8) 10%, transparent 50%);
+    background: linear-gradient(-14deg, rgba(0, 0, 0, 0.8) 10%, transparent 50%);
     margin: 0; }
 
 .globalWrapper-animation .wave {
@@ -4470,8 +4496,46 @@ article .article__hd {
   .globalWrapper-animation .wave.three {
     background-color: rgba(0, 0, 255, 0.3); }
 
-.globalWrapper-article .font__meiryo {
-  font-family: 'メイリオ', 'Meiryo'; }
+.globalWrapper-article #headerLogo {
+  height: 5.625rem; }
 
-.globalWrapper-article .font__meiryo {
+.globalWrapper-article .articleHeader {
+  padding: 4rem 0 8rem; }
+  .globalWrapper-article .articleHeader .lead {
+    font-family: "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro", Hiragino Kaku Gothic Pro, sans-serif;
+    font-size: 0.875rem;
+    margin: 0 0 0 0;
+    line-height: 1.6; }
+
+.globalWrapper-article .article__text .article__textHead {
+  font-size: 1.375rem;
+  line-height: 1.6;
+  font-weight: bold;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro", Hiragino Kaku Gothic Pro, sans-serif;
+  color: #333; }
+
+.globalWrapper-article .article__text .caption {
+  font-size: 0.875rem;
+  line-height: 2;
+  color: #333; }
+
+.globalWrapper-article .article__text .company {
+  font-size: 0.875rem;
+  color: #333; }
+
+.globalWrapper-article .article__text .labelgroup {
+  border-top: 1px solid red; }
+
+.globalWrapper-article .article__text .button {
+  position: relative;
+  right: 0; }
+
+.globalWrapper-font .fontList a {
+  font-size: 0.75rem;
+  font-weight: bold; }
+
+.globalWrapper-font .font-YuGothic {
   font-family: '游ゴシック', 'Yu Gothic'; }
+
+.globalWrapper-font .font-YuGothic--mac {
+  font-family: '游ゴシック体', 'YuGothic'; }

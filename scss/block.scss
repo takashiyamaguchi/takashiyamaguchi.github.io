@@ -2,11 +2,47 @@
 	border : 1px solid red;
 
 	@include breakpoint(medium only){
-		border : 1px solid green;
+		border : 1px solid darken(red, 10%);
 	}
 
 	@include breakpoint(small only){
-		border : 1px solid aqua;
+		border : 1px solid darken(red, 20%);
+	}
+}
+
+.blue{
+	border : 1px solid blue;
+
+	@include breakpoint(medium only){
+		border : 1px solid darken(blue, 10%);
+	}
+
+	@include breakpoint(small only){
+		border : 1px solid darken(blue, 20%);
+	}
+}
+
+.yellow{
+	border : 1px solid yellow;
+
+	@include breakpoint(medium only){
+		border : 1px solid darken(yellow, 10%);
+	}
+
+	@include breakpoint(small only){
+		border : 1px solid darken(yellow, 20%);
+	}
+}
+
+.green{
+	border : 1px solid green;
+
+	@include breakpoint(medium only){
+		border : 1px solid darken(green, 10%);
+	}
+
+	@include breakpoint(small only){
+		border : 1px solid darken(green, 20%);
 	}
 }
 
@@ -24,36 +60,26 @@ $facebook-color : #3b5998;
 // 共通
 // **************************
 
-// .headerLogo{
-	// background : url('../img/sandbox-logo.png') no-repeat;
-	// background-size: contain;
-	// color : transparent;
-	// font-size: 0;
-	// text-shadow: none;
-	// height : rem-calc(60);
-	// width
-// }
 .headerLead{
-	font-size: rem-calc(16);
-	margin-bottom: rem-calc(24);
+	font-size     : rem-calc(16);
+	margin-bottom : rem-calc(24);
 }
 
 article{
 	.article__hd{
-		color : $light-gray;
-		padding-bottom: rem-calc(8);
+		color          : $light-gray;
+		padding-bottom : rem-calc(8);
 	}
 }
 
 .content{
-	margin-bottom: 2rem;
+	margin-bottom : 2rem;
 }
 
 // トップページ
 // **************************
 
 .profImg{
-	// display: inline-block;
 	height: 100%;
 	width : rem-calc(120);
 	background : url('../img/prf.png') no-repeat;
@@ -94,32 +120,6 @@ article{
 		}
 	}
 }
-
-//中央から横に広がる線
-// .topCategory{
-// 	position: relative;
-// 	display: inline-block;
-// 	padding: rem-calc(3);
-// 	text-decoration: none;
-
-// 	&::after{
-// 		content : '';
-// 		position: absolute;
-// 		bottom: 0;
-// 		left : 0;
-// 		width : 100%;
-// 		height : rem-calc(1);
-// 		transform : scaleX(0);
-// 		background-color: red;
-// 		transition : all .3s;
-// 	}
-
-// 	&:hover{
-// 		&::after{
-// 			transform : scaleX(1);
-// 		}
-// 	}
-// }
 
 // ボタン
 // **************************
@@ -553,52 +553,50 @@ transform: translate3d(0,-4px,0);
 }
 
 	#headerLogo{
-		width : rem-calc(400);
-		// margin-bottom : rem-calc(16);
-		// fill : transparent;
+		height : rem-calc(90);
 
 		.logo-i{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-l1{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-l2{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-u{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-s{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-t1{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-r1{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-a{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-t2{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-o{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 		.logo-r2{
-			animation : bounce 3s;
+			animation : bounce 2s;
 			transform-origin : center bottom;
 		}
 	}
@@ -606,12 +604,6 @@ transform: translate3d(0,-4px,0);
 	.landingHeader{
 		padding : rem-calc(64) 0 rem-calc(128);
 
-		// .title{
-		// 	// font-family: ;
-		// 	font-size : rem-calc(48);
-		// 	margin : 0 0 0 0;
-		// 	line-height: 1.6;
-		// }
 		.lead{
 			font-family: "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro", Hiragino Kaku Gothic Pro, sans-serif;
 			font-size : rem-calc(14);
@@ -621,11 +613,11 @@ transform: translate3d(0,-4px,0);
 	}
 
 	img{
-		filter : grayscale(100%);
+		filter : grayscale(100%) brightness(30%);
 		transition : all .3s;
 
 		&:hover{
-			filter : grayscale(0%);
+			filter : grayscale(0%) brightness(100%);
 		}
 
 		&.lazy{
@@ -649,26 +641,31 @@ transform: translate3d(0,-4px,0);
 
 		// 画面外で隠れている
 		.author__text{
-			position: relative;
-			top : 0;
+			position   : relative;
+			font-weight: bold;
+			font-size  : rem-calc(14);
+			top        : 0;
+			text-align : right;
 			transition : all .3s;
+			padding    : rem-calc(48) rem-calc(12) rem-calc(8);
 		}
 
-		.en{
-			font-size: rem-calc(16);
-			font-weight: bold;
-		}
-		.ja{
-			font-size: rem-calc(14);
-			font-weight: bold;
-		}
+		// .en{
+		// 	font-size: rem-calc(16);
+		// 	font-weight: bold;
+		// }
+		// .ja{
+		// 	font-size: rem-calc(14);
+		// 	font-weight: bold;
+		// }
 
 		&:hover{
 			.author__text{
 				position: relative;
-				top : -83px;
+				top : -78px;
 				color : white;
-				background-color: red;
+				// background-color: red;
+				background : linear-gradient(-14deg, rgba(black, .8) 10%, rgba(black, 0) 50%);
 				margin : 0;
 			}
 		}
@@ -698,24 +695,74 @@ transform: translate3d(0,-4px,0);
 	}
 }
 
-// リスト
+// 記事リスト
 // **************************
 .globalWrapper-article{
 
-	.font{
-		@at-root{
-			#{&}__meiryo{
-				font-family: 'メイリオ', 'Meiryo';
-			}
+	#headerLogo{
+		height : rem-calc(90);
+	}
+
+	.articleHeader{
+		padding : rem-calc(64) 0 rem-calc(128);
+
+		.lead{
+			font-family: "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro", Hiragino Kaku Gothic Pro, sans-serif;
+			font-size : rem-calc(14);
+			margin : 0 0 0 0;
+			line-height: 1.6;
+		}
+	}
+
+	.article__text{
+		.article__textHead{
+			font-size : rem-calc(22);
+			line-height : 1.6;
+			font-weight : bold;
+			font-family : "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro", Hiragino Kaku Gothic Pro, sans-serif;
+			color     : #333;
+		}
+		.caption{
+			font-size   : rem-calc(14);
+			line-height : 2;
+			color       : #333;
+		}
+		.company{
+			font-size : rem-calc(14);
+			color     : #333;
 		}
 
-		@at-root{
-			#{&}__meiryo{
-				font-family: '游ゴシック', 'Yu Gothic';
-			}
+		.labelgroup{
+			border-top : 1px solid red;
+		}
+
+		.button{
+			position : relative;
+			right    : 0;
 		}
 	}
 }
 
+
+// フォント
+// **************************
+.globalWrapper-font{
+
+	.fontList{
+		a{
+			font-size: rem-calc(12);
+			font-weight: bold;
+		}
+	}
+
+	.font-YuGothic{
+		font-family : '游ゴシック', 'Yu Gothic';
+	}
+
+	.font-YuGothic--mac{
+		font-family : '游ゴシック体', 'YuGothic';
+	}
+	
+}
 
 

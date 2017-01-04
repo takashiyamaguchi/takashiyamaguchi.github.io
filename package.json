@@ -1,0 +1,25 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "gulpのサンプルファイル作成",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takashiyamaguchi/takashiyamaguchi.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takashiyamaguchi/takashiyamaguchi.github.io/issues"
+  },
+  "homepage": "https://github.com/takashiyamaguchi/takashiyamaguchi.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0"
+  }
+}

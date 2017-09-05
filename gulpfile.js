@@ -1,7 +1,7 @@
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
+var sourcemaps   = require('gulp-sourcemaps');
 var browserSync  = require('browser-sync');
 
 gulp.task('default',['browser-sync'] ,function(){
@@ -9,6 +9,7 @@ gulp.task('default',['browser-sync'] ,function(){
 	gulp.watch('./src/scss/**/*.scss', ['sass']);
 	gulp.watch('./**/*.html', ['bs-reload']);
 	gulp.watch('./src/css/', ['bs-reload']);
+	gulp.watch('./src/js/', ['bs-reload']);
 });
 
 gulp.task('sass', function(){

@@ -1,5 +1,24 @@
 @charset 'UTF-8';
 
-html{
-	display: flex;
+@import 'var';
+// @include mq() {
+// 	body {
+// 		background-color: red;
+// 	}
+// }
+
+body {
+	background-color: #ffffff;
+	@include mq(sm) {
+		background-color: blue;
+	}
+	@include mq() {
+		background-color: red;
+	}
+	@include mq(lg) {
+		background-color: green;
+	}
+	@include mq(xl) {
+		background-color: yellow;
+	}
 }

@@ -8,8 +8,9 @@ gulp.task('default',['browser-sync'] ,function(){
 	console.log("gulp 起動");
 	gulp.watch('./src/scss/**/*.scss', ['sass']);
 	gulp.watch('./**/*.html', ['bs-reload']);
-	gulp.watch('./src/css/', ['bs-reload']);
-	gulp.watch('./src/js/', ['bs-reload']);
+	gulp.watch('./src/css/**/*.css', ['bs-reload']);
+	// gulp.watch('./src/css/', ['bs-reload']);
+	// gulp.watch('./src/js/', ['bs-reload']);
 });
 
 gulp.task('sass', function(){
@@ -20,16 +21,16 @@ gulp.task('sass', function(){
 		.on('error', sass.logError)
 		)
 		.pipe(sourcemaps.init())
-        .pipe(autoprefixer({
-        	browsers: [
-        		'last 3 version',
-        		'ie >= 9',
-        		'iOS >= 8',
-        		'Android >= 4'
-        	],
-        	cascade: false
-        }))
-        .pipe(sourcemaps.write('../maps/'))
+		.pipe(autoprefixer({
+			browsers: [
+				'last 3 version',
+				'ie >= 9',
+				'iOS >= 8',
+				'Android >= 4'
+			],
+			cascade: false
+		}))
+		.pipe(sourcemaps.write('../maps/'))
 		.pipe(gulp.dest('./src/css'));
 });
 

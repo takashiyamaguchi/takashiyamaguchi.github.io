@@ -1,0 +1,77 @@
+@charset 'UTF-8';
+
+// variables.scss
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+
+// class_name
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+$small_name : 'sm';
+$medium_name: 'md';
+$large_name : 'lg';
+$xlarge_name: 'xl';
+
+// breakpoints
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+// 各画面サイズのブレイクポイントを入力
+$small_size : 400px;
+$medium_size: 768px;
+$large_size : 1000px;
+$xlarge_size: 1200px;
+
+$breakpoints: (
+  'sm': 'screen and (min-width: $small_size)',
+  'md': 'screen and (min-width: $medium_size)',
+  'lg': 'screen and (min-width: $large_size)',
+  'xl': 'screen and (min-width: $xlarge_size)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+// $breakpoints : (
+// 	'small'   : 'screen and (min-width : 0)',
+// 	'medium'  : 'screen and (min-width : 640px)',
+// 	'large'   : 'screen and (min-width : 1024px)',
+// 	'xlarge'  : 'screen and (min-width : 1200px)',
+// 	'xxlarge' : 'screen and (min-width : 1440px)'
+// ) !default;
+
+// @mixin small {}
+// @media screen and (min-width : map-get($breakpoints, small)){
+// 	@content;
+// }
+
+// min-width
+// $breakpoint : (
+// 	'small'  : 'screen and (min-width: $medium)',
+// 	'medium' : 'screen and (min-width: $large)',
+// 	'large'  : 'screen and (min-width: $xlarge)',
+// 	'xlarge' : 'screen and (min-width: $xxlarge)'
+// );
+
+// @debug map-get($breakpoints, medium);
+
+
+
+// max-width
+// $breakpoint_down: (
+// 	'small'  : 'screen and (max-width: $medium - 1)',
+// 	'medium' : 'screen and (max-width: $large - 1)',
+// 	'large'  : 'screen and (max-width: $xlarge - 1)',
+// 	'xlarge' : 'screen and (max-width: $xxlarge - 1)'
+// ) !default;
+
+// @mixin media-up($breakpoint: md) {
+//   @media map-get($breakpoint_up, $breakpoint) {
+//     @content;
+//   }
+// }
+
+// @mixin media-down($breakpoint: md) {
+//   @media #{map-get($breakpoint_down, $breakpoint)} {
+//     @content;
+//   }
+// }

@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE,eAAyB;EAIzB,qBAAa;EAAb,qBAAa;EAAb,cAAa;EAEb,gBAAe,EAChB;EARD;IAGI,YAAW,EACZ","file":"../style.css","sourcesContent":["h1 {\n  color: darken(green, 10%);\n  &:hover {\n    color: blue;\n  }\n  display: flex;\n  // background-size: contain;\n  font-size: 12px;\n}\n"]}

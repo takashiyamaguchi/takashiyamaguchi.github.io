@@ -3,7 +3,23 @@ h1 {
   &:hover {
     color: blue;
   }
-  display: flex;
   // background-size: contain;
   font-size: 12px;
+}
+
+/*
+---
+name: base button
+category: module/button
+---
+* Base button style.
+* Use `a` or `button` tag.
+
+```html
+<a class="testeste">Button</a>
+<a class="testeste">Button</a>
+```
+*/
+.testeste {
+	color: red;
 }

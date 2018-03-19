@@ -1,0 +1,34 @@
+/*
+---
+name: breakpoint
+category: base/breakpoint
+---
+
+```css
+@include l { <!--PCのみの記述--> }
+@include m { <!--タブレットのみの記述--> }
+@include s { <!--スマホのみの記述--> }
+```
+
+*/
+//
+$max_width    : 1800px;
+$large_width  : 1280px;
+$middle_width : 480px;
+$small_width  : 480px;
+
+// breakpoint
+$l_size : $large_width  + 1;
+$m_size : $middle_width + 1;
+$s_size : $small_width  + 1;
+
+//media query
+@mixin l {
+    @media screen and (min-width: $m_size) { @content; }
+}
+@mixin s {
+    @media screen and (max-width: $middle_width) { @content; }
+}
+@mixin m {
+    @media screen and (min-width: $s_size) and (max-width: $middle_width) { @content; }
+}

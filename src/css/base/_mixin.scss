@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+//pc:hover
+@mixin hover {
+  @include l { &:hover { @content; } }
+}
+
+// background-size:cover;
+@mixin bg_cover { background-size:cover; background-repeat:no-repeat; }
+@mixin bg_100 { background-size:100%; background-repeat:no-repeat; }
+@mixin bg_stripe { background-image:url(#{$common_path}cmn__bg_stripe.gif); background-size:6px; background-position:left top; border-radius:8px; }
+//
+
+// margin center
+@mixin margin-x { margin-left:auto; margin-right:auto; }
+@mixin margin-y { margin-top:auto; margin-bottom:auto; }
+//
+
+// absolute center
+@mixin absolute-x { @include margin-x; position:absolute; right:0; left:0; }
+@mixin absolute-y { @include margin-y; position:absolute; top:0; bottom:0; }
+@mixin absolute-xy { margin:auto; position:absolute; top:0; bottom:0; right:0; left:0; }
+//
+
+// writing-mode:vertical-rl
+@mixin vertical-text {  writing-mode:vertical-rl; -webkit-writing-mode:vertical-rl; -ms-writing-mode:tb-rl; }
+//
+
+
+//clearfix
+@mixin clearfix { zoom:1;
+  &:before,&:after { content:''; display:table; }
+  &:after { clear:both; }
+}
+
+@mixin wrap { @include margin-x; position:relative; }

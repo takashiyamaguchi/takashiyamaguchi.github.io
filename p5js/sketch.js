@@ -15,9 +15,9 @@ function draw() {
 	for (var y = 0; y <= height; y+= step) {
 		for (var x = 0; x <= width; x+= step) {
 			const d = dist(x, y, mouseX, mouseY);
-			const size = map(sin(d * 0.05), -1, 1, 0, 50);
+			const size = map(sin(d * 0.05), -1, 1, 0, 5);
 			fill(map(sin(d * 0.05), -1, 1, 60, 320), 100, 100);
-			rect(x, y, size, size);
+			ellipse(x, y, size, size);
 		}
 	}
 }

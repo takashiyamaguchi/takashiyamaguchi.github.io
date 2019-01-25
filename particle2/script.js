@@ -6,7 +6,7 @@ particlesJS('hoge',{
         "value":80, //シェイプの数
         "density":{
           "enable":true, //シェイプの密集度を変更するか否か
-          "value_area":200 //シェイプの密集度
+          "value_area":2000 //シェイプの密集度
         }
       },
       "shape":{
@@ -57,7 +57,7 @@ particlesJS('hoge',{
         "distance":150, //線をつなぐシェイプの間隔
         "color":"#ffffff", //線の色
         "opacity":0.4, //線の透明度
-        "width":1 //線の太さ
+        "width":10 //線の太さ
       },
 //--------------------
 

@@ -10,12 +10,12 @@
   "license": "ISC",
   "devDependencies": {
     "ejs-lint": "^0.3.0",
+    "gulp": "^4.0.2",
     "gulp-ejs": "^5.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-replace": "^1.0.0"
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
   },
-  "dependencies": {
-    "ejs": "^3.0.1",
-    "gulp": "^4.0.2"
-  }
+  "dependencies": {}
 }

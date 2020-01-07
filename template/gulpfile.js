@@ -2,6 +2,8 @@
 
 const { src, dest, watch, parallel } = require('gulp');
 const sass = require('gulp-sass');
+const postcss = require('gulp-postcss')
+const autoprefixer = require('autoprefixer')
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const rename = require('gulp-rename');
@@ -38,7 +40,8 @@ const css = () => {
         .pipe(
             plumber(plumberErrorMessage)
         )
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass())
+        .pipe(postcss(postcssOption))
         .pipe(dest('./css'));
 }
 

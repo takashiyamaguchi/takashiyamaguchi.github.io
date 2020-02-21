@@ -1,2 +1,16 @@
 html, body {
-  background-color: green; }
+  background-color: green;
+  display: -webkit-box;
+  display: flex; }
+
+.hoge {
+  width: 240px; }
+
+.fuga {
+  width: 160px; }
+
+@media screen and (min-width: 768px) {
+  .hoge {
+    width: 576px; }
+  .fuga {
+    width: 384px; } }

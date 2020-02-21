@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;EACE,qBAAc;EAAd,sBAAc;EAAd,qBAAc;EAAd,cAAc;CACf","file":"../scss/index.css","sourcesContent":["html {\n  display: flex;\n}\n"]}

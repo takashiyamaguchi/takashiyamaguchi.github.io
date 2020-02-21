@@ -1,15 +1,17 @@
 'use strict';
 
-const { src, dest, watch, parallel } = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
+const mqpacker = require('css-mqpacker')
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const rename = require('gulp-rename');
 const ejs = require('gulp-ejs');
 const ejsLint = require('ejs-lint');
 const replace = require('gulp-replace');
+const browserSync = require('browser-sync').create()
 
 sass.compiler = require('node-sass');
 
@@ -25,6 +27,7 @@ const srcPath = {
 }
 
 const distPath = {
+    root: './',
     html: 'ejs/**/*.ejs',
     css: 'scss/**/*.scss'
 }
@@ -32,6 +35,27 @@ const distPath = {
 // error option
 const plumberErrorMessage = {
     errorHandler: notify.onError('<%= error.message %>')
+}
+
+// sass option
+const postcssOption = [
+    autoprefixer({
+        grid: true
+    }), mqpacker
+]
+
+// 
+
+const serve = (done) => {
+    const browserSyncOption = {
+        port: 3000,
+        server: {
+            baseDir: distPath.root
+        }
+    }
+    browserSync.init(browserSyncOption);
+    done();
+    console.log('Server was launched');
 }
 
 // sass compile
@@ -51,14 +75,28 @@ const html = () => {
         .pipe(
             plumber(plumberErrorMessage)
         )
-        .pipe(ejs({}, {}, {ext:'.html'}))
+        .pipe(ejs({}, {}, { ext: '.html' }))
         .pipe(rename({ extname: '.html' }))
         .pipe(dest('./'));
 }
 
-exports.default = () => {
-    watch(distPath.html, html)
-    watch(distPath.css, css)
+const watchAll = (done) => {
+    const browserReload = () => {
+        browserSync.reload()
+    }
+    watch(distPath.html, html);
+    watch(distPath.css, css);
+    watch([distPath.html, distPath.css], browserReload);
+    done()
 }
 
-exports.build = parallel(html, css)
+// exports.default = () => {
+//     parallel(html, css, serve, watchAll);
+// }
+
+exports.default = series(
+    parallel(html, css, serve),
+    watchAll
+);
+
+
